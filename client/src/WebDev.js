@@ -24,7 +24,7 @@ class WebDev extends React.Component {
     return (
       <div>
         <div id='webDev'>
-          <img onClick={this.openModal} src='https://placekitten.com/300/300'></img>
+          <img className='webDevThumb'onClick={this.openModal} src='Images/yelpington.png'></img>
         </div>
         {this.state.modalDisplay ? <TestModal closeModal={this.closeModal} /> : null}
       </div>
