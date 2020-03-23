@@ -8,10 +8,10 @@ const app = express();
 const port = process.env.PORT || 3000; 
 // .env means 'from whatever location we're running inside of, look for a variable named PORT, it's called an environment variable 
 
-app.use(express.static(path.resolve('./client/build'))) // sets up a static directory from which our files are served and prevents people seeing sensitive code like login credentials or cc numbers, should always set up a static directory 
+app.use(express.static(path.join(__dirname, '/client/build'))); // sets up a static directory from which our files are served and prevents people seeing sensitive code like login credentials or cc numbers, should always set up a static directory 
 
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve('./client/build/index.html'))
+  res.sendFile(path.join(__dirname, '/client/build/index.html'));
 }) // * means 'any path' - __dirname joins our current directory to the following string 
 
 app.listen(port, () => {
