@@ -15,10 +15,12 @@ function Home(props) {
       
       <div id='homeAbout'>
         <h2>I'm Lee</h2>
-        <p id='aboutP'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p id='aboutP'>Thanks for stopping by, I am a creative problem solver who enjoys using new technology to nerd out on ways to make things more efficient and look great. I’ve always sought the “Why” behind things and consider myself a lifelong learner in constant pursuit of perfecting my craft. When not coding or designing, I can be found in the mountains out for a run or ski depending on the season.  </p>
       </div>
 
       <div id='homeSkills'>
+        <img id='owl'src='Images/owl.svg'></img>
+        <div>
         <h2>Skills</h2>
           <h3>Web Development</h3>
           <ul>
@@ -41,6 +43,7 @@ function Home(props) {
             <li>Shopify</li>
             <li>Quickbooks</li>
           </ul>
+          </div>
       </div>
 
       <div id='homeCallToAction'>

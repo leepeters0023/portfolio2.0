@@ -28,11 +28,6 @@ class Design extends React.Component {
       <div>
         <div id='Design'>
          <div id='designContent'>
-           <img className='designImg'   src='Images/alligiance.png' />
-          <img src='' className='designImg'></img>
-          <img src='Images/lyftWorks.png' className='designImg'></img>
-          <img src='Images/bikeshack.png' className='designImg'></img>
-          <img src='Images/bloom/png' className='designImg'></img>
           <img src='Images/' className='designImg'></img>
           <img src='Images/' className='designImg'></img>
           <img src='Images/' className='designImg'></img>

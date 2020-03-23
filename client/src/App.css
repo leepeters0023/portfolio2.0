@@ -111,15 +111,22 @@ li {
 }
 #homeSkills {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
   width: 100vw;
   height: auto;
-  padding-left: 75px;
+  padding-left: 100px;
   padding-top: 20px;
   padding-bottom: 20px;
   opacity: 75%;
 }
+#owl{
+  height: 500px;
+  width: auto;
+  align-self: center;
+  margin-left: 300px;
+}
+
 #homeCallToAction {
   padding: 20px 50px 20px 50px;
   text-align: center;
@@ -129,13 +136,8 @@ li {
 
 /* - - - design - - - */
 #Design {
-  display: grid;
-  grid-template-columns: 1fr 200px;
-  grid-template-rows: auto;
-  justify-items: center;
-  width: 100vw;
-  height: 720px;
-  padding: 20px 50px 20px 50px;
+  background-color: #FDFDFD;
+
 }
 #designContent {
   display: flex;
@@ -154,6 +156,7 @@ li {
 #webDev {
   display: flex;
   position: relative;
+  background-color: #FDFDFD;
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
