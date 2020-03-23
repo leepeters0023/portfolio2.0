@@ -17,37 +17,25 @@ class Design extends React.Component {
       modalDisplay: false,
     });
   }
-  /*handleChange = (event) => {
-    this.setState({
-      modalDisplay: event.target.value
-    });
-  }*/
 
   render() {
     return (
       <div>
         <div id='Design'>
-         <div id='designContent'>
-          <img src='Images/' className='designImg'></img>
-          <img src='Images/' className='designImg'></img>
-          <img src='Images/' className='designImg'></img>
-          <img src='Images/' className='designImg'></img>
-          <img src='Images/' className='designImg'></img>
-          <img src='Images/' className='designImg'></img>
-          <img src='Images/' className='designImg'></img>
-         </div>
-         <div id='designCopy'></div>
+          <div id='designContent'>
+            <h1>Here will live a mighty carousel</h1>
+          </div>
+          <div id='designCopy'></div>
         </div>
       </div>
     )
   }
   testModal = () => {
-    return(
+    return (
       <div id='testModal' className='modal'>
       </div>
-    )}
+    )
+  }
 }
-
-
 
 export default Design
