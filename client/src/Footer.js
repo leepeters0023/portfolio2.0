@@ -8,10 +8,10 @@ function Footer() {
       </a>
       <div id='footerLogos'>
         <a href='https://linkedin.com/in/leepeters23/'>
-          <img src='Images/linkedInjpg.jpg' alt='linkedIn logo' className='logo'></img>
+          <img src='' alt='linkedIn logo' className='logo'></img>
         </a> {/* need to find better logos */}
         <a href='https://github.com/leepeters0023'>
-          <img src='Images/gtihub.png' alt='github logo' className='logo'></img>
+          <img src='' alt='github logo' className='logo'></img>
         </a>
       </div>
 

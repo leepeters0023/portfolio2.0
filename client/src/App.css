@@ -10,6 +10,17 @@ box-sizing: border-box;
   #owl{
     display: none;
   }
+  #header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    background-color: #FDFDFD;
+    height: auto;
+  }
+  #headerButtons {
+    align-content: space-evenly;
+  }
   #homeLanding {
     display: flex;
     flex-direction: column;
@@ -17,6 +28,13 @@ box-sizing: border-box;
     background-color: #FDFDFD;
     width: auto;
     height: auto;
+  }
+  #howdy {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: -100px;
+    z-index: 3;
   }
   h1 {
     font-size: 50%;
@@ -120,7 +138,9 @@ li {
   overflow: hidden;
 }
 #howdy {
-  margin-right: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
   margin-left: -100px;
   z-index: 3;
 }
@@ -137,7 +157,7 @@ li {
   background-color: black;
   padding: 0px 50px 20px 50px;
   margin-top: 40px;
-  opacity: 0.75;
+  opacity: 0.5;
 }
 
 #home-skills {
@@ -149,16 +169,12 @@ li {
   padding-left: 100px;
   padding-top: 20px;
   padding-bottom: 20px;
-  opacity: 0.75;
-<<<<<<< HEAD
-=======
 }
 
 #home-call-to-action {
   padding: 20px 50px 20px 50px;
   text-align: center;
   border-top: solid black 1px;
->>>>>>> 6d5199db6050da8618e53b429d6f9b7131f6518a
 }
 /* end */
 #owl {
