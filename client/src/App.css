@@ -8,7 +8,7 @@ box-sizing: border-box;
 *:focus {outline:none}
 @media screen and (max-width: 600px) {
   #owl{
-    display: none; 
+    display: none;
   }
   #homeLanding {
     display: flex;
@@ -39,7 +39,7 @@ box-sizing: border-box;
     margin-top: 40px;
     opacity: 0.75;
   }
-} 
+}
 
 /* - - - body, all - - - */
 h1 {
@@ -48,11 +48,11 @@ h1 {
 }
 h2 {
     font-size: 100px;
-    font-family: Helvetica, sans-sarif; 
+    font-family: Helvetica, sans-sarif;
 }
 h3 {
   font-size: 50px;
-  font-family: 'Open Sans', Helvetica; 
+  font-family: 'Open Sans', Helvetica;
 }
 p {
   font-size: 16pt;
@@ -106,7 +106,7 @@ li {
 }
 /* - - ^ header ^ - - */
 /* - - - home - - - */
-#homeLanding {
+#home-landing {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -114,7 +114,7 @@ li {
   width: 100vw;
   height: 720px;
 }
-#homePortrait {
+#home-portrait {
   justify-self: flex-start;
   margin-left: -75px;
   overflow: hidden;
@@ -124,7 +124,9 @@ li {
   margin-left: -100px;
   z-index: 3;
 }
-#homeAbout {
+
+/* start */
+#home-about {
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
@@ -137,10 +139,8 @@ li {
   margin-top: 40px;
   opacity: 0.75;
 }
-#aboutP {
-  padding-right: 100px; 
-}
-#homeSkills {
+
+#home-skills {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
@@ -150,18 +150,28 @@ li {
   padding-top: 20px;
   padding-bottom: 20px;
   opacity: 0.75;
+<<<<<<< HEAD
+=======
 }
-#owl{
+
+#home-call-to-action {
+  padding: 20px 50px 20px 50px;
+  text-align: center;
+  border-top: solid black 1px;
+>>>>>>> 6d5199db6050da8618e53b429d6f9b7131f6518a
+}
+/* end */
+#owl {
   height: 500px;
   width: auto;
   align-self: center;
   margin-left: 300px;
 }
-#homeCallToAction {
-  padding: 20px 50px 20px 50px;
-  text-align: center;
-  border-top: solid black 1px;
+
+#about-p {
+  padding-right: 100px;
 }
+
 /* - - ^ home ^ - - */
 
 /* - - - design - - - */
@@ -239,7 +249,7 @@ li {
 /* - - ^ webDev ^ - - */
 
 /* - - - footer - - - */
-#footer { 
+#footer {
   background-color: black;
   display: flex;
   align-items: center;

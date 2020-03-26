@@ -23,5 +23,5 @@ function App() {
   )
 }
 
-// window.onpopstate=this. thing allows us to retain their values while people are using forward and back we need to listen this way 
+// window.onpopstate=this. thing allows us to retain their values while people are using forward and back we need to listen this way
 export default App;
