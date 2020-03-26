@@ -7,7 +7,7 @@ box-sizing: border-box;
 }
 @media screen and (max-width: 600px) {
   #owl{
-    display: none; 
+    display: none;
   }
   #homeLanding {
     display: flex;
@@ -36,9 +36,9 @@ box-sizing: border-box;
     background-color: black;
     padding: auto;
     margin-top: 40px;
-    opacity: 75%;
+    opacity: 0.75;
   }
-} 
+}
 
 /* - - - body, all - - - */
 h1 {
@@ -47,11 +47,11 @@ h1 {
 }
 h2 {
     font-size: 100px;
-    font-family: Helvetica, sans-sarif; 
+    font-family: Helvetica, sans-sarif;
 }
 h3 {
   font-size: 50px;
-  font-family: 'Open Sans', Helvetica; 
+  font-family: 'Open Sans', Helvetica;
 }
 p {
   font-size: 16pt;
@@ -83,7 +83,7 @@ li {
   cursor: pointer;
   color: white;
   background-color: hotpink;
-  opacity: 85%;
+  opacity: 0.85;
 }
 /* - - ^ buttons ^ - - */
 
@@ -103,7 +103,7 @@ li {
 }
 /* - - ^ header ^ - - */
 /* - - - home - - - */
-#homeLanding {
+#home-landing {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -111,7 +111,7 @@ li {
   width: 100vw;
   height: 720px;
 }
-#homePortrait {
+#home-portrait {
   justify-self: flex-start;
   margin-left: -75px;
   overflow: hidden;
@@ -121,7 +121,9 @@ li {
   margin-left: -100px;
   z-index: 3;
 }
-#homeAbout {
+
+/* start */
+#home-about {
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
@@ -132,12 +134,10 @@ li {
   background-color: black;
   padding: 0px 50px 20px 50px;
   margin-top: 40px;
-  opacity: 75%;
+  opacity: 0.75;
 }
-#aboutP {
-  padding-right: 100px; 
-}
-#homeSkills {
+
+#home-skills {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
@@ -146,19 +146,26 @@ li {
   padding-left: 100px;
   padding-top: 20px;
   padding-bottom: 20px;
-  opacity: 75%;
+  opacity: 0.75;
 }
-#owl{
+
+#home-call-to-action {
+  padding: 20px 50px 20px 50px;
+  text-align: center;
+  border-top: solid black 1px;
+}
+/* end */
+#owl {
   height: 500px;
   width: auto;
   align-self: center;
   margin-left: 300px;
 }
-#homeCallToAction {
-  padding: 20px 50px 20px 50px;
-  text-align: center;
-  border-top: solid black 1px;
+
+#about-p {
+  padding-right: 100px;
 }
+
 /* - - ^ home ^ - - */
 
 /* - - - design - - - */
@@ -197,7 +204,7 @@ li {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  opacity: 85%;
+  opacity: 0.85;
   position: fixed;
   z-index: 2;
   height: 100vh;
@@ -236,7 +243,7 @@ li {
 /* - - ^ webDev ^ - - */
 
 /* - - - footer - - - */
-#footer { 
+#footer {
   background-color: black;
   display: flex;
   align-items: center;
@@ -247,7 +254,7 @@ li {
   width: 100vw;
   height: 175px;
   margin-top: auto;
-  opacity: 75%;
+  opacity: 0.75;
 }
 #footerButton {
   background-color: transparent;
@@ -268,7 +275,7 @@ li {
   cursor: pointer;
   color: white;
   background-color: hotpink;
-  opacity: 85%;
+  opacity: 0.85;
 }
 .logo{
   height: 50px;
