@@ -5,6 +5,7 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+*:focus {outline:none}
 @media screen and (max-width: 600px) {
   #owl{
     display: none; 
@@ -36,7 +37,7 @@ box-sizing: border-box;
     background-color: black;
     padding: auto;
     margin-top: 40px;
-    opacity: 75%;
+    opacity: 0.75;
   }
 } 
 
@@ -74,16 +75,18 @@ li {
   font-family: 'Open Sans', Helvetica;
   color: grey;
   padding: 10px 40px;
+  margin: 10px;
   text-align: center;
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
 }
+
 .headerButton:hover {
   cursor: pointer;
   color: white;
   background-color: hotpink;
-  opacity: 85%;
+  opacity: 0.85;
 }
 /* - - ^ buttons ^ - - */
 
@@ -132,7 +135,7 @@ li {
   background-color: black;
   padding: 0px 50px 20px 50px;
   margin-top: 40px;
-  opacity: 75%;
+  opacity: 0.75;
 }
 #aboutP {
   padding-right: 100px; 
@@ -146,7 +149,7 @@ li {
   padding-left: 100px;
   padding-top: 20px;
   padding-bottom: 20px;
-  opacity: 75%;
+  opacity: 0.75;
 }
 #owl{
   height: 500px;
@@ -197,7 +200,7 @@ li {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  opacity: 85%;
+  opacity: 0.85;
   position: fixed;
   z-index: 2;
   height: 100vh;
@@ -247,7 +250,7 @@ li {
   width: 100vw;
   height: 175px;
   margin-top: auto;
-  opacity: 75%;
+  opacity: 0.75;
 }
 #footerButton {
   background-color: transparent;
@@ -268,7 +271,7 @@ li {
   cursor: pointer;
   color: white;
   background-color: hotpink;
-  opacity: 85%;
+  opacity: 0.85;
 }
 .logo{
   height: 50px;
