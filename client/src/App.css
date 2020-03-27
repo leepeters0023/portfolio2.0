@@ -6,58 +6,6 @@ padding: 0;
 box-sizing: border-box;
 }
 *:focus {outline:none}
-@media screen and (max-width: 600px) {
-  #owl{
-    display: none;
-  }
-  #header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100vw;
-    background-color: #FDFDFD;
-    height: auto;
-  }
-  #headerButtons {
-    align-content: space-evenly;
-  }
-  #homeLanding {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #FDFDFD;
-    width: auto;
-    height: auto;
-  }
-  #howdy {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: auto;
-    margin-left: -100px;
-    z-index: 3;
-  }
-  h1 {
-    font-size: 50%;
-    font-family: Helvetica, sans-sarif;
-  }
-  #homePortrait {
-    justify-self: center;
-    overflow: hidden;
-  }
-  #homeAbout {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: flex-end;
-    width: 100vw;
-    height: auto;
-    color: white;
-    background-color: black;
-    padding: auto;
-    margin-top: 40px;
-    opacity: 0.75;
-  }
-}
 
 /* - - - body, all - - - */
 h1 {
@@ -309,3 +257,86 @@ li {
 }
 
 /* - - ^ footer ^ - - */
+
+/* - - mobile - all - - */
+@media screen and (max-width: 600px) {
+  #owl{
+    display: none;
+  }
+  #header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    background-color: #FDFDFD;
+    height: auto;
+  }
+  #headerButtons {
+    align-content: space-evenly;
+  }
+  #homeLanding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FDFDFD;
+    width: auto;
+    height: auto;
+  }
+  #howdy {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: -100px;
+    z-index: 3;
+  }
+  h1 {
+    font-size: 50%;
+    font-family: Helvetica, sans-sarif;
+  }
+  #homePortrait {
+    justify-self: center;
+    overflow: hidden;
+  }
+  #homeAbout {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100vw;
+    height: auto;
+    color: white;
+    background-color: black;
+    padding: auto;
+    margin-top: 40px;
+    opacity: 0.75;
+  }
+}
+
+#mobileFooterContainer {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  align-items: center;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 10;
+  flex-shrink: 0;
+}
+.mobileFooterButton {
+  background-color:#FDFDFD;
+  display: flex;
+  border: none;
+  font-family: 'Open Sans', Helvetica;
+  color: grey;
+  padding: 10px 40px;
+  margin: 10px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+
+}
+.mobileFooterLogo { 
+  height: auto;
+  width: auto;
+  margin: 0px 10px 0px 10px;
+}
