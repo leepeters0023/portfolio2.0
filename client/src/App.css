@@ -89,6 +89,12 @@ li {
   margin-left: -75px;
   overflow: hidden;
 }
+#home-portrait-alt {
+  display: none;
+  justify-self: flex-start;
+  margin-left: -75px;
+  overflow: hidden;
+}
 #howdy {
   display: flex;
   flex-wrap: wrap;
@@ -305,6 +311,17 @@ li {
   }
   #home-portrait {
    display: none;
+  }
+  #home-portrait-alt {
+    height: auto;
+    display: flex;
+  }
+  #home-portrait-mobile{
+    justify-self: center;
+    margin-left: 30px;
+    height: 60vh;
+    width: auto;
+    margin-top: -100px;
   }
   #home-about {
     display: flex;

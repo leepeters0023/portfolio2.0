@@ -4,13 +4,17 @@ function Home(props) {
   return (
     <div id='home-main'>
       <div id='home-landing'>
-      <div id='howdy'>
-        <h1>Howdy</h1>
+        <div id='howdy'>
+          <h1>Howdy</h1>
         </div>
-      <div id="home-portrait">
-      <a href="https://imgur.com/fL7xqIK"><img src="https://i.imgur.com/fL7xqIK.jpg?1" title="source: imgur.com" /></a>
-         </div>
+        <div id="home-portrait">
+          <a href="https://imgur.com/fL7xqIK"><img src="https://i.imgur.com/fL7xqIK.jpg?1" title="source: imgur.com" /></a>
+        </div>
+        <div id="home-portrait-alt">
+          <img id="home-portrait-mobile" src="Images/cartoon1.svg"/>
+        </div>
       </div>
+
 
       <div id='home-about'>
         <h2>I'm Lee</h2>
@@ -18,9 +22,9 @@ function Home(props) {
       </div>
 
       <div id='home-skills'>
-        <img id='owl'src='Images/owl.svg'></img>
+        <img id='owl' src='Images/owl.svg'></img>
         <div>
-        <h2>Skills</h2>
+          <h2>Skills</h2>
           <h3>Web Development</h3>
           <ul>
             <li>Primary programming language: JavaScript</li>
@@ -42,13 +46,13 @@ function Home(props) {
             <li>Shopify</li>
             <li>Quickbooks</li>
           </ul>
-          </div>
+        </div>
       </div>
 
       <div id='home-call-to-action'>
         <h3>Let's build beautiful, meaningful things together</h3>
       </div>
     </div>
-  ) 
-  }
+  )
+}
 export default Home
