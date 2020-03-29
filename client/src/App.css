@@ -7,6 +7,9 @@ box-sizing: border-box;
 }
 *:focus {outline:none}
 
+#mobile-footer-container {
+  display: none;
+}
 /* - - - body, all - - - */
 h1 {
   font-size: 200px;
@@ -33,6 +36,7 @@ li {
   list-style-position: inside;
 }
 /* - - ^ body, all ^ - - */
+
 /* - - - buttons - - - */
 .headerButton {
   background-color:#FDFDFD;
@@ -47,7 +51,6 @@ li {
   cursor: pointer;
   text-decoration: none;
 }
-
 .headerButton:hover {
   cursor: pointer;
   color: white;
@@ -71,6 +74,7 @@ li {
   align-content: space-evenly;
 }
 /* - - ^ header ^ - - */
+
 /* - - - home - - - */
 #home-landing {
   display: flex;
@@ -92,7 +96,6 @@ li {
   margin-left: -100px;
   z-index: 3;
 }
-
 /* start */
 #home-about {
   display: flex;
@@ -107,7 +110,6 @@ li {
   margin-top: 40px;
   opacity: 0.5;
 }
-
 #home-skills {
   display: flex;
   flex-direction: row-reverse;
@@ -118,7 +120,6 @@ li {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
 #home-call-to-action {
   padding: 20px 50px 20px 50px;
   text-align: center;
@@ -131,11 +132,9 @@ li {
   align-self: center;
   margin-left: 300px;
 }
-
 #about-p {
   padding-right: 100px;
 }
-
 /* - - ^ home ^ - - */
 
 /* - - - design - - - */
@@ -255,7 +254,6 @@ li {
 .logo:hover {
   cursor: pointer;
 }
-
 /* - - ^ footer ^ - - */
 
 /* - - mobile - all - - */
@@ -264,79 +262,127 @@ li {
     display: none;
   }
   #header {
+    display: none;
+  }
+  #footer {
+    display: none;
+  }
+  #home-main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100vw;
-    background-color: #FDFDFD;
-    height: auto;
-  }
-  #headerButtons {
-    align-content: space-evenly;
-  }
-  #homeLanding {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     background-color: #FDFDFD;
-    width: auto;
-    height: auto;
+  }
+  #home-landing {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 50vh;
+  
   }
   #howdy {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: auto;
-    margin-left: -100px;
-    z-index: 3;
+    margin: 10px;
   }
   h1 {
-    font-size: 50%;
+    font-size: 25vw;
+    text-align: center;
     font-family: Helvetica, sans-sarif;
   }
-  #homePortrait {
-    justify-self: center;
-    overflow: hidden;
+  h2 {
+    font-size: 20vw;
+    text-align: center;
   }
-  #homeAbout {
+  h3 {
+    padding: 10px;
+    font-size: 10vw;
+    text-align: center;
+  }
+  ul {
+  font-size: 5vw;
+  text-align: center;
+  }
+  #home-portrait {
+   display: none;
+  }
+  #home-about {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: flex-end;
     width: 100vw;
-    height: auto;
     color: white;
     background-color: black;
-    padding: auto;
     margin-top: 40px;
     opacity: 0.75;
   }
-}
-
-#mobileFooterContainer {
-  display: flex;
-  flex-direction: row;
-  position: fixed;
-  align-items: center;
-  background-color: black;
-  opacity: 0.5;
-  z-index: 10;
-  flex-shrink: 0;
-}
-.mobileFooterButton {
-  background-color:#FDFDFD;
-  display: flex;
-  border: none;
-  font-family: 'Open Sans', Helvetica;
-  color: grey;
-  padding: 10px 40px;
-  margin: 10px;
-  text-align: center;
-  display: inline-block;
-  text-decoration: none;
-
-}
-.mobileFooterLogo { 
-  height: auto;
-  width: auto;
-  margin: 0px 10px 0px 10px;
+  #about-p {
+    padding: 5px 5px 5px 5px;
+  }
+  p {
+    display: flex;
+    text-align: center;
+    width: 100vw;
+    font-size: 16pt;
+    font-family: 'Open Sans', Helvetica;
+  }
+  #home-skills {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100vw;
+    padding: 5px 5px 5px 5px;
+  }
+  #home-call-to-action {
+    padding: 20px 50px 20px 50px;
+    margin-bottom: 75px;
+    text-align: center;
+    border-top: solid black 1px;
+  }
+  #mobile-footer-container {
+    display: flex;
+    position: fixed;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+    z-index: 100;
+    height: 10vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    opacity: 0.9;
+  }
+  #mobile-footer-logo-div {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+  }
+  .mobile-footer-logo { 
+    margin: 0px 10px 0px 12px;
+    height: 30px;
+    width: 30px;
+  }
+  .mobile-footer-button {
+    background-color:transparent;
+    display: flex;
+    border: grey solid 2px;
+    border-radius: 10px;
+    font-family: 'Open Sans', Helvetica;
+    padding: 10px 7px 15px;
+    margin: 5px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+  }
+  .mobile-footer-button:active {
+    background-color: hotpink;
+  }
+  .mobile-footer-logo:active { 
+    background-color: hotpink;
+    opacity: 0.2;
+  }
 }

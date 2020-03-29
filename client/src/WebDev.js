@@ -12,7 +12,7 @@ class WebDev extends React.Component {
 
       modalDisplay: true
     })
-    console.log('we click')
+    console.log('clicked')
   }
   closeModal = (event) => {
     this.setState({

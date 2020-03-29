@@ -1,16 +1,15 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 function Home(props) {
   return (
     <div id='home-main'>
       <div id='home-landing'>
+      <div id='howdy'>
+        <h1>Howdy</h1>
+        </div>
       <div id="home-portrait">
       <a href="https://imgur.com/fL7xqIK"><img src="https://i.imgur.com/fL7xqIK.jpg?1" title="source: imgur.com" /></a>
          </div>
-         <div id='howdy'>
-        <h1>Howdy</h1>
-        </div>
       </div>
 
       <div id='home-about'>
@@ -50,7 +49,6 @@ function Home(props) {
         <h3>Let's build beautiful, meaningful things together</h3>
       </div>
     </div>
-  ) // link tags function the same way as anchor tags in that we must wrap things in them
-}
-
-export default Home;
+  ) 
+  }
+export default Home
