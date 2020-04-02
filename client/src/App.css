@@ -78,7 +78,7 @@ li {
 /* - - - home - - - */
 #home-landing {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   background-color: #FDFDFD;
   width: 100vw;
@@ -95,12 +95,14 @@ li {
   margin-left: -75px;
   overflow: hidden;
 }
+
 #howdy {
   display: flex;
   flex-wrap: wrap;
   margin-right: auto;
   margin-left: -100px;
   z-index: 3;
+  overflow: hidden;
 }
 /* start */
 #home-about {
@@ -210,7 +212,7 @@ li {
   width: 100%;
   height: 100%;
 }
-.webDevThumb {
+.webdev-thumb {
   cursor: pointer;
   height: auto;
   width: 500px;
@@ -240,7 +242,7 @@ li {
   margin: 20px;
   border: solid white 1px;
   color: grey;
-  padding: 10px 25px;
+  padding: 5px 20px;
   text-align: center;
   display: inline-block;
   cursor: pointer;
@@ -255,9 +257,7 @@ li {
 .logo{
   height: 50px;
   width: 50px;
-  margin: 0px 10px 0px 10px;
-}
-.logo:hover {
+  margin: 0px 25px 0px 25px;
   cursor: pointer;
 }
 /* - - ^ footer ^ - - */
@@ -285,15 +285,20 @@ li {
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    align-items: center;
+    justify-items: center;
     height: 50vh;
   
   }
   #howdy {
-    margin: 10px;
+    z-index: 10;
+    display: flex;
   }
   h1 {
     font-size: 25vw;
     text-align: center;
+    justify-self: center;
+    align-self: center;
     font-family: Helvetica, sans-sarif;
   }
   h2 {
@@ -315,10 +320,13 @@ li {
   #home-portrait-alt {
     height: auto;
     display: flex;
+    z-index: 0;
+    margin-left: 20px;
+    padding-right: 20px;
   }
   #home-portrait-mobile{
     justify-self: center;
-    margin-left: 30px;
+    margin: inherit;
     height: 60vh;
     width: auto;
     margin-top: -100px;

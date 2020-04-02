@@ -27,15 +27,12 @@ class Design extends React.Component {
           </div>
           <div id='designCopy'></div>
         </div>
+        <div className='more-to-come'>
+          <h3>More on the way, stay tuned...</h3>
+        </div>
       </div>
     )
   }
-  testModal = () => {
-    return (
-      <div id='testModal' className='modal'>
-      </div>
-    )
-  }
-}
+  
 
 export default Design

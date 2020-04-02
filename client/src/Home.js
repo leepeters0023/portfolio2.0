@@ -5,7 +5,7 @@ function Home(props) {
     <div id='home-main'>
       <div id='home-landing'>
         <div id='howdy'>
-          <h1>Howdy</h1>
+          <h1>Hello</h1>
         </div>
         <div id="home-portrait">
           <a href="https://imgur.com/fL7xqIK"><img src="https://i.imgur.com/fL7xqIK.jpg?1" title="source: imgur.com" /></a>
