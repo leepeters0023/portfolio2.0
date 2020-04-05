@@ -33,6 +33,6 @@ class Design extends React.Component {
       </div>
     )
   }
-  
+}
 
 export default Design
