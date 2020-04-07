@@ -10,31 +10,28 @@ class WebDev extends React.Component {
   }
   openModal = (event) => {
     this.setState({
-      modalDisplay: true
+      modalDisplay: true,
+      currentModal: event.target.id
+
     })
     console.log('clicked')
-
+    console.log(event.target.id)
   }
   closeModal = (event) => {
     this.setState({
       modalDisplay: false,
     });
   }
-  handleChange = (event) => {
-    this.setState({
-      currentModal: event.target.id
-    })
-  }
 
   render() {
     return (
       <div>
         <div id='webDev'>
-          <img id='e7754b14c80249eaaa0844afea3f4c84' alt='yelpington thumb' className='webdev-thumb' onClick={this.openModal} handleChange={this.handleChange} src='Images/yelpington.png'></img>
-          <img id='171415a1c6d745d39dda2471215219cb' alt='geo vermonter thumb' className='webdev-thumb' onClick={this.openModal} handleChange={this.handleChange} src='Images/geoVT.png'>
+          <img id='e7754b14c80249eaaa0844afea3f4c84' alt='yelpington thumb' className='webdev-thumb' onClick={this.openModal} src='Images/yelpington.png'></img>
+          <img id='171415a1c6d745d39dda2471215219cb' alt='geo vermonter thumb' className='webdev-thumb' onClick={this.openModal} src='Images/geoVT.png'>
           </img>
         </div>
-        {this.state.modalDisplay ? <Modal closeModal={this.closeModal} /> : null}
+        {this.state.modalDisplay ? <Modal closeModal={this.closeModal} currentModal={this.state.currentModal} /> : null}
         <div className='more-to-come'>
           <h3>More on the way, stay tuned...</h3>
         </div>
@@ -48,12 +45,13 @@ function Modal(props) {
     <div id='webDev'>
       <div id='Modal' className='modal'>
         <div className='video'>
-          <iframe className='vidIframe' src={`https://www.loom.com/share/${props.currentModal}`} webkitallowfullscreen mozallowfullscreen allowfullscreen>
-          </iframe>
+          <div style={{ position: 'relative', paddingBottom: '56.25%', height: '0'}}>
+        <iframe src={`https://www.loom.com/embed/${props.currentModal}`} frameBorder="0" style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}></iframe>
         </div>
-        <button className='headerButton' id='closeModalButton' onClick={props.closeModal}>Close</button>
       </div>
+      <button className='headerButton' id='closeModalButton' onClick={props.closeModal}>Close</button>
     </div>
+    </div >
   )
 }
 
