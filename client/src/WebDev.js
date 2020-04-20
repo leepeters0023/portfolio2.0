@@ -28,6 +28,7 @@ class WebDev extends React.Component {
       <div>
         <div id='webDev'>
           <img id='e7754b14c80249eaaa0844afea3f4c84' alt='yelpington thumb' className='webdev-thumb' onClick={this.openModal} src='Images/yelpington.png'></img>
+          <img id='5666b343d9bc43c892735bc1c6a53e8d' alt='tic tac toe thumb' className='webdev-thumb' onClick={this.openModal} src='Images/TicTac.png'></img>
           <img id='171415a1c6d745d39dda2471215219cb' alt='geo vermonter thumb' className='webdev-thumb' onClick={this.openModal} src='Images/geoVT.png'>
           </img>
         </div>
