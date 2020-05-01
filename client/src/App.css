@@ -12,7 +12,7 @@ box-sizing: border-box;
 }
 /* - - - body, all - - - */
 h1 {
-  font-size: 200px;
+  font-size: 250px;
   font-family: Helvetica, sans-sarif;
 }
 h2 {
@@ -35,14 +35,16 @@ li {
   list-style-type: disc;
   list-style-position: inside;
 }
+
 /* - - ^ body, all ^ - - */
 
 /* - - - buttons - - - */
 .headerButton {
-  background-color:#FDFDFD;
+  background-color: transparent;
   display: flex;
   border: none;
   font-family: 'Open Sans', Helvetica;
+  font-size: 15px;
   color: grey;
   padding: 10px 40px;
   margin: 10px;
@@ -50,13 +52,28 @@ li {
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
+  
 }
+
 .headerButton:hover {
   cursor: pointer;
   color: white;
   background-color: hotpink;
   opacity: 0.85;
+  left: -100px;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
 }
+@-webkit-keyframes slide {
+  100% { left: 0; }
+}
+
+@keyframes slide {
+  100% { left: 0; }
+}
+
 /* - - ^ buttons ^ - - */
 
 /* - - - header - - - */
@@ -65,7 +82,7 @@ li {
   align-items: flex-end;
   justify-content: flex-end;
   width: 100vw;
-  background-color: #FDFDFD;
+  background-color: transparent;
   height: 75px;
   z-index: 1;
 }
@@ -79,16 +96,14 @@ li {
 #home-landing {
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
-  background-color: #FDFDFD;
+  background-color:transparent;
   width: 100vw;
-  height: 720px;
 }
 #home-portrait {
-  justify-self: flex-start;
   margin-left: -75px;
-  overflow: hidden;
+  margin-bottom: -5px;
 }
+
 #home-portrait-alt {
   display: none;
   justify-self: flex-start;
@@ -96,13 +111,12 @@ li {
   overflow: hidden;
 }
 
-#howdy {
+#home-text-greeting {
   display: flex;
-  flex-wrap: wrap;
+  justify-self: flex-start;
+  align-self: center;
   margin-right: auto;
-  margin-left: -100px;
   z-index: 3;
-  overflow: hidden;
 }
 /* start */
 #home-about {
@@ -113,10 +127,8 @@ li {
   width: 100vw;
   height: auto;
   color: white;
-  background-color: black;
-  padding: 0px 50px 20px 50px;
-  margin-top: 40px;
-  opacity: 0.5;
+  background-color: #7E7E7E;
+  padding: 20px 50px 20px 50px;
 }
 #home-skills {
   display: flex;
@@ -125,13 +137,13 @@ li {
   width: 100vw;
   height: auto;
   padding-left: 100px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 #home-call-to-action {
   padding: 20px 50px 20px 50px;
   text-align: center;
-  border-top: solid black 1px;
+  border-top: solid black 3px;
 }
 /* end */
 #owl {
@@ -164,17 +176,36 @@ li {
 /* - - ^ design ^ - - */
 
 /* - - - webDev - - - */
-#webDev {
+#web-dev-container {
+  height: 99vh;
+}
+#web-dev {
   display: flex;
   position: relative;
-  background-color: #FDFDFD;
+  overflow-y: scroll;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  overflow: hidden;
+  height: 99%;
   width: 100vw;
-  height: 720px;
-  padding: 20px 50px 20px 50px;
 }
+#web-dev::-webkit-scrollbar {
+  width: 2em;
+}
+#web-dev::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+#web-dev::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+.webdev-thumb {
+  margin: 10px;
+  box-shadow: 5px 5px 10px 2px black;
+  cursor: pointer;
+}
+
 .modal {
   display: flex;
   background-color: black;
@@ -221,7 +252,7 @@ li {
 
 /* - - - footer - - - */
 #footer {
-  background-color: black;
+  background-color: #7E7E7E;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -231,7 +262,6 @@ li {
   width: 100vw;
   height: 175px;
   margin-top: auto;
-  opacity: 0.75;
 }
 #footerButton {
   background-color: transparent;
@@ -241,7 +271,7 @@ li {
   font-size: 50px;
   margin: 20px;
   border: solid white 1px;
-  color: grey;
+  color: white;
   padding: 5px 20px;
   text-align: center;
   display: inline-block;
@@ -253,12 +283,17 @@ li {
   color: white;
   background-color: hotpink;
   opacity: 0.85;
+  z-index: 3;
 }
 .logo{
   height: 50px;
   width: 50px;
   margin: 0px 25px 0px 25px;
   cursor: pointer;
+}
+.logo:hover {
+  cursor: pointer;
+  opacity: .5;
 }
 /* - - ^ footer ^ - - */
 

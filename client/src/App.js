@@ -16,7 +16,6 @@ function App() {
         <Route path={'/Home'} component={Home} />
         <Route path={'/WebDev'} component={WebDev} />
         <Route path={'/Design'} component={Design} />
-        <Route path={'/Footer'} component={Footer} />
       </Switch>
       <Footer />
     </div>
