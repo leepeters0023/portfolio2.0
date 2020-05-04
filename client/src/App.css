@@ -25,6 +25,11 @@ h3 {
   font-size: 50px;
   font-family: "Open Sans", Helvetica;
 }
+h4 {
+  font-size: 20px;
+  font-family: "Open Sans", Helvetica;
+  text-align: center;
+}
 p {
   font-size: 16pt;
   font-family: "Open Sans", Helvetica;
@@ -244,6 +249,17 @@ li {
   height: 95%;
   width: 100vw;
 }
+#park-btv-link {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  padding: 0px 5px 0px 5px;
+  border-radius: 5px;
+}
+#park-btv-link:hover{
+  opacity: .5;
+}
 #web-dev::-webkit-scrollbar {
   width: 2em;
 }
@@ -265,7 +281,7 @@ li {
   transform: scale(1.1)
 }
 [id='87b0054d983542baa7735240d057593f'] {
-  margin-top: 50%;
+  margin-top: 60%;
 }
 /* - - - top icon, figure out why this overflow is broken - - - */
 
