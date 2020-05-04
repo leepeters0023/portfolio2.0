@@ -32,8 +32,7 @@ class WebDev extends React.Component {
           </img>
           <div className='more-to-come'>
           <h3>More on the way, stay tuned...</h3>
-    
-        </div>
+          </div>
         </div>
         {this.state.modalDisplay ? <Modal closeModal={this.closeModal} currentModal={this.state.currentModal} /> : null}
         

@@ -10,15 +10,14 @@ function Home(props) {
         <div id="home-portrait">
         <a id="home-portrait-desktop" href="https://imgur.com/jcWzmNS"><img src="https://i.imgur.com/jcWzmNS.png?2" title="source: imgur.com" /></a>
         </div>
-        <div id="home-portrait-alt">
           <img id="home-portrait-mobile" src="Images/cartoon1.svg"/>
-        </div>
+  
       </div>
 
 
       <div id='home-about'>
         <h2>I'm Lee</h2>
-        <p id='about-p'><strong>Thanks for stopping by. I’m a full stack web developer specializing in bespoke, single origin, grass fed, gluten free, and slow roasted apps and websites.</strong><br></br><br></br>I like to make things more efficient and look pretty using the arsenal at my disposal listed below. I’ve worked in a variety of environments, from startups to freelancing for anyone willing to support my fancy coffee habit. When not coding or designing, I enjoy never being satisfied with my own work, photography, trail running, backcountry skiing, toast, and occasionally sharing my unpopular opinions about who makes the best beer (spoiler alert: it's not Heady Topper).<br></br><br></br>Hungry for more? Have a closer look at my work history on my LinkedIn or check out my code on Github - both linked below.</p>
+        <p id='about-p'>Thanks for stopping by. I’m a full stack web developer specializing in bespoke, single origin, grass fed, gluten free, and slow roasted apps and websites.<br></br><br></br>I like to make things more efficient and look pretty using the arsenal at my disposal listed below. I’ve worked in a variety of environments, from startups to freelancing for anyone willing to support my fancy coffee habit. When not coding or designing, I enjoy never being satisfied with my own work, photography, trail running, backcountry skiing, toast, and occasionally sharing my unpopular opinions about who makes the best beer (spoiler alert: it's not Heady Topper).<br></br><br></br>Hungry for more? Have a closer look at my work history on my LinkedIn or check out my code on Github - both linked below.</p>
       </div>
 
       <div id='home-skills'>

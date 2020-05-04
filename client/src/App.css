@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-*:focus {outline:none}
+*:focus {
+  outline: none;
+}
 
 #mobile-footer-container {
   display: none;
@@ -16,20 +18,20 @@ h1 {
   font-family: Helvetica, sans-sarif;
 }
 h2 {
-    font-size: 100px;
-    font-family: Helvetica, sans-sarif;
+  font-size: 100px;
+  font-family: Helvetica, sans-sarif;
 }
 h3 {
   font-size: 50px;
-  font-family: 'Open Sans', Helvetica;
+  font-family: "Open Sans", Helvetica;
 }
 p {
   font-size: 16pt;
-  font-family: 'Open Sans', Helvetica;
+  font-family: "Open Sans", Helvetica;
 }
 ul {
   font-size: 16pt;
-  font-family: 'Open Sans', Helvetica;
+  font-family: "Open Sans", Helvetica;
 }
 li {
   list-style-type: disc;
@@ -43,7 +45,7 @@ li {
   background-color: transparent;
   display: flex;
   border: none;
-  font-family: 'Open Sans', Helvetica;
+  font-family: "Open Sans", Helvetica;
   font-size: 15px;
   color: grey;
   padding: 10px 40px;
@@ -52,7 +54,6 @@ li {
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
-  
 }
 
 .headerButton:hover {
@@ -67,11 +68,15 @@ li {
   animation-delay: 2s;
 }
 @-webkit-keyframes slide {
-  100% { left: 0; }
+  100% {
+    left: 0;
+  }
 }
 
 @keyframes slide {
-  100% { left: 0; }
+  100% {
+    left: 0;
+  }
 }
 
 /* - - ^ buttons ^ - - */
@@ -96,21 +101,16 @@ li {
 #home-landing {
   display: flex;
   flex-direction: row-reverse;
-  background-color:transparent;
+  background-color: transparent;
   width: 100vw;
 }
 #home-portrait {
   margin-left: -75px;
   margin-bottom: -5px;
 }
-
-#home-portrait-alt {
+#home-portrait-mobile {
   display: none;
-  justify-self: flex-start;
-  margin-left: -75px;
-  overflow: hidden;
 }
-
 #home-text-greeting {
   display: flex;
   justify-self: flex-start;
@@ -118,7 +118,6 @@ li {
   margin-right: auto;
   z-index: 3;
 }
-/* start */
 #home-about {
   display: flex;
   align-items: center;
@@ -127,7 +126,7 @@ li {
   width: 100vw;
   height: auto;
   color: white;
-  background-color: #7E7E7E;
+  background-color: #7e7e7e;
   padding: 20px 50px 20px 50px;
 }
 #home-skills {
@@ -145,7 +144,6 @@ li {
   text-align: center;
   border-top: solid black 3px;
 }
-/* end */
 #owl {
   height: 500px;
   width: auto;
@@ -159,34 +157,90 @@ li {
 
 /* - - - design - - - */
 #Design {
-  background-color: #FDFDFD;
-
+  background-color: transparent;
 }
-#designContent {
+#design-content {
   display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  scroll-behavior: auto;
-  position: relative;
+  flex-direction: row;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: auto;
+  width: 99vw;
+}
+#design-content::-webkit-scrollbar {
+  width: 2em;
+}
+#design-content::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+#design-content::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }
 .designImg {
+  align-self: center;
+  height: 100%;
+  width: auto;
+  margin: 5px 15px 5px 15px;
+  box-shadow: 5px 5px 10px 2px black;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.designImg:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+#HollywoodBowl {
+  width: 50vw;
+}
+#alligiance {
+  height: 50vh;
+}
+#heartbay{
+  height: 50vh;
+}
+#destdev {
+  height: 50vh;
+}
+#dest-dev-small {
+  height: 50vh;
+}
+#bloom {
+  height: 50vh;
+}
+#sqlabel {
+  height: 50vh;
+}
+#jennie-poster {
+  height: 50vh;
+}
+#HollywoodBowl1 {
+  width: 50vw;
+}
+#cleanBottleInsta2 {
   height: 60vh;
-  max-width: auto;
+}
+#cleanBottleInsta3 {
+  height: 60vh;
+}
+#custombottles {
+  height: 60vh;
 }
 /* - - ^ design ^ - - */
 
 /* - - - webDev - - - */
 #web-dev-container {
   height: 99vh;
+  overflow-y: hidden;
 }
 #web-dev {
   display: flex;
-  position: relative;
-  overflow-y: scroll;
+  overflow-y: auto;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  height: 99%;
+  height: 95%;
   width: 100vw;
 }
 #web-dev::-webkit-scrollbar {
@@ -204,8 +258,22 @@ li {
   margin: 10px;
   box-shadow: 5px 5px 10px 2px black;
   cursor: pointer;
+  transition: transform 0.2s;
+}
+/* - - - top icon, figure out why this overflow is broken - - - */
+#e7754b14c80249eaaa0844afea3f4c84 {
+  margin-top: 400px;
+}
+#e7754b14c80249eaaa0844afea3f4c84:hover {
+  transform: scale(1.1);
 }
 
+[id="5666b343d9bc43c892735bc1c6a53e8d"]:hover {
+  transform: scale(1.1);
+}
+[id="171415a1c6d745d39dda2471215219cb"]:hover {
+  transform: scale(1.1);
+}
 .modal {
   display: flex;
   background-color: black;
@@ -221,7 +289,7 @@ li {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#closeModalButton{
+#closeModalButton {
   justify-self: center;
   align-self: center;
   z-index: 3;
@@ -252,7 +320,7 @@ li {
 
 /* - - - footer - - - */
 #footer {
-  background-color: #7E7E7E;
+  background-color: #7e7e7e;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -285,7 +353,7 @@ li {
   opacity: 0.85;
   z-index: 3;
 }
-.logo{
+.logo {
   height: 50px;
   width: 50px;
   margin: 0px 25px 0px 25px;
@@ -293,13 +361,13 @@ li {
 }
 .logo:hover {
   cursor: pointer;
-  opacity: .5;
+  opacity: 0.5;
 }
 /* - - ^ footer ^ - - */
 
 /* - - mobile - all - - */
 @media screen and (max-width: 600px) {
-  #owl{
+  #owl {
     display: none;
   }
   #header {
@@ -310,30 +378,27 @@ li {
   }
   #home-main {
     display: flex;
+    overflow: scroll;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: #FDFDFD;
+    background-color: transparent;
   }
   #home-landing {
+    height: 50vh;
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
     align-items: center;
     justify-items: center;
-    height: 50vh;
-  
+    flex-direction: column;
   }
-  #howdy {
-    z-index: 10;
+  #home-text-greeting {
     display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    margin: auto;
   }
   h1 {
     font-size: 25vw;
-    text-align: center;
-    justify-self: center;
-    align-self: center;
     font-family: Helvetica, sans-sarif;
   }
   h2 {
@@ -346,46 +411,34 @@ li {
     text-align: center;
   }
   ul {
-  font-size: 5vw;
-  text-align: center;
+    font-size: 5vw;
+    text-align: center;
   }
   #home-portrait {
-   display: none;
+    display: none;
   }
-  #home-portrait-alt {
-    height: auto;
-    display: flex;
-    z-index: 0;
-    margin-left: 20px;
-    padding-right: 20px;
-  }
-  #home-portrait-mobile{
+  #home-portrait-mobile {
     justify-self: center;
-    margin: inherit;
-    height: 60vh;
-    width: auto;
-    margin-top: -100px;
+    align-self: center;
+    width: 50vw;
   }
   #home-about {
     display: flex;
-    align-items: center;
+    align-content: center;
     flex-direction: column;
-    justify-content: flex-end;
     width: 100vw;
     color: white;
-    background-color: black;
-    margin-top: 40px;
-    opacity: 0.75;
+    background-color: #7e7e7e;
+    margin-top: 10px;
   }
   #about-p {
-    padding: 5px 5px 5px 5px;
-  }
-  p {
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     width: 100vw;
+    padding: 20px;
     font-size: 16pt;
-    font-family: 'Open Sans', Helvetica;
+    font-family: "Open Sans", Helvetica;
   }
   #home-skills {
     display: flex;
@@ -397,22 +450,100 @@ li {
   }
   #home-call-to-action {
     padding: 20px 50px 20px 50px;
-    margin-bottom: 75px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     text-align: center;
-    border-top: solid black 1px;
+    border-top: solid black 3px;
   }
+  /* - - - webDev - - - */
+  #web-dev {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+  }
+  #web-dev::-webkit-scrollbar {
+    display: none;
+  }
+  /* - - - top icon, figure out why this overflow is broken - - - */
+  #e7754b14c80249eaaa0844afea3f4c84 {
+    margin-top: 200px;
+  }
+  .modal {
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    opacity: 0.85;
+    position: fixed;
+    z-index: 2;
+    height: 100vh;
+    width: 100vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #closeModalButton {
+    justify-self: center;
+    align-self: center;
+    z-index: 3;
+    width: 125px;
+    margin-top: 50px;
+    border-radius: 10px;
+  }
+  .video {
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    width: 90vw;
+    height: auto;
+  }
+  .vidIframe {
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+  }
+  .webdev-thumb {
+    cursor: pointer;
+    height: auto;
+    width: 90vw;
+  }
+  /* - - - design - - - */
+  #Design {
+    background-color: transparent;
+  }
+  #design-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    overflow: scroll;
+    bottom: 55px;
+  }
+  .designImg {
+    width: 90vw;
+    height: auto;
+    margin: 20px 0px 20px 0px;
+  }
+  #dest-dev-small {
+    margin: -50px 0px -50px 0px;
+  }
+  /* - - - footer - - - */
   #mobile-footer-container {
     display: flex;
     position: fixed;
+    bottom: 0px;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    bottom: 0px;
-    z-index: 100;
+    z-index: 1;
     height: 10vh;
     width: 100vw;
     background-color: whitesmoke;
     opacity: 0.9;
+    clear: both;
   }
   #mobile-footer-logo-div {
     display: flex;
@@ -421,27 +552,27 @@ li {
     justify-content: center;
     align-content: center;
   }
-  .mobile-footer-logo { 
-    margin: 0px 10px 0px 12px;
+  .mobile-footer-logo {
+    margin: 0px 5px 0px 5px;
     height: 30px;
     width: 30px;
   }
   .mobile-footer-button {
-    background-color:transparent;
+    background-color: transparent;
     display: flex;
     border: grey solid 2px;
     border-radius: 10px;
-    font-family: 'Open Sans', Helvetica;
+    font-family: "Open Sans", Helvetica;
     padding: 10px 7px 15px;
-    margin: 5px;
     text-align: center;
+    margin: 0px 5px 0px 5px;
     display: inline-block;
     text-decoration: none;
   }
   .mobile-footer-button:active {
     background-color: hotpink;
   }
-  .mobile-footer-logo:active { 
+  .mobile-footer-logo:active {
     background-color: hotpink;
     opacity: 0.2;
   }
