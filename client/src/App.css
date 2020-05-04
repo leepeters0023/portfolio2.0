@@ -186,6 +186,7 @@ li {
   box-shadow: 5px 5px 10px 2px black;
   cursor: pointer;
   transition: transform 0.2s;
+  cursor: unset;
 }
 .designImg:hover {
   transform: scale(1.1);
@@ -260,27 +261,21 @@ li {
   cursor: pointer;
   transition: transform 0.2s;
 }
+.webdev-thumb:hover {
+  transform: scale(1.1)
+}
+[id='87b0054d983542baa7735240d057593f'] {
+  margin-top: 50%;
+}
 /* - - - top icon, figure out why this overflow is broken - - - */
-#e7754b14c80249eaaa0844afea3f4c84 {
-  margin-top: 400px;
-}
-#e7754b14c80249eaaa0844afea3f4c84:hover {
-  transform: scale(1.1);
-}
 
-[id="5666b343d9bc43c892735bc1c6a53e8d"]:hover {
-  transform: scale(1.1);
-}
-[id="171415a1c6d745d39dda2471215219cb"]:hover {
-  transform: scale(1.1);
-}
 .modal {
   display: flex;
   background-color: black;
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  opacity: 0.85;
+  opacity: .97;
   position: fixed;
   z-index: 2;
   height: 100vh;
@@ -295,7 +290,9 @@ li {
   z-index: 3;
   width: 125px;
   margin-top: 50px;
+  border: solid white 2px;
   border-radius: 10px;
+  opacity: 1;
 }
 .video {
   position: relative;
