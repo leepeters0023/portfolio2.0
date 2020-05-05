@@ -36,7 +36,7 @@ class Design extends React.Component {
           <img src='Images/sqlabel.png' alt='clean bottle square logo' id='sqlabel'className='designImg'></img>
           <img src='Images/jenniePoster.jpg' alt='Jennie Bender Promo poster' id='jennie-poster'className='designImg'></img>
           <img src='/Images/HollywoodBowl1.jpg' alt='hollywood bowl' id='HollywoodBowl1'className='designImg'></img>
-          <img src='/Images/Cleanbottle8.png' alt='clean bottle display' id='Cleanbottle8' className='designImg'></img>
+          <img src='/Images/CleanBottle8.png' alt='clean bottle display' id='Cleanbottle8' className='designImg'></img>
           <img src='/Images/cleanBottleSellSheet.jpg' alt='cleanbottle sell sheet' id='cleanBottleSellSheet' className='designImg'></img>
           <img src='/Images/cleanBottleInsta2.jpg' alt='clean bottle instagram' id='cleanBottleInsta2' className='designImg'></img>
           <img src='/Images/cleanBottleInsta3.jpg' alt='clean bottle instagram' id='cleanBottleInsta3' className='designImg'></img>
