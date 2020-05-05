@@ -60,7 +60,6 @@ li {
   cursor: pointer;
   text-decoration: none;
 }
-
 .headerButton:hover {
   cursor: pointer;
   color: white;
@@ -77,13 +76,11 @@ li {
     left: 0;
   }
 }
-
 @keyframes slide {
   100% {
     left: 0;
   }
 }
-
 /* - - ^ buttons ^ - - */
 
 /* - - - header - - - */
@@ -170,6 +167,7 @@ li {
   overflow-x: scroll;
   overflow-y: hidden;
   height: auto;
+  padding: 20px;
   width: 99vw;
 }
 #design-content::-webkit-scrollbar {
@@ -237,8 +235,7 @@ li {
 
 /* - - - webDev - - - */
 #web-dev-container {
-  height: 99vh;
-  overflow-y: hidden;
+  height: fit-content;
 }
 #web-dev {
   display: flex;
@@ -280,9 +277,7 @@ li {
 .webdev-thumb:hover {
   transform: scale(1.1)
 }
-[id='87b0054d983542baa7735240d057593f'] {
-  margin-top: 60%;
-}
+
 /* - - - top icon, figure out why this overflow is broken - - - */
 
 .modal {
@@ -335,14 +330,13 @@ li {
 #footer {
   background-color: #7e7e7e;
   display: flex;
+  bottom: 0;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  flex-shrink: 0;
-  position: static;
   width: 100vw;
   height: 175px;
-  margin-top: auto;
 }
 #footerButton {
   background-color: transparent;
@@ -431,6 +425,7 @@ li {
     display: none;
   }
   #home-portrait-mobile {
+    display: flex;
     justify-self: center;
     align-self: center;
     width: 50vw;
@@ -462,7 +457,7 @@ li {
     padding: 5px 5px 5px 5px;
   }
   #home-call-to-action {
-    padding: 20px 50px 20px 50px;
+    padding: 20px 0px 50px 0px;
     margin-top: 15px;
     margin-bottom: 15px;
     text-align: center;
@@ -473,15 +468,15 @@ li {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 90vh;
+    height: fit-content;
   }
   #web-dev::-webkit-scrollbar {
     display: none;
   }
-  /* - - - top icon, figure out why this overflow is broken - - - */
-  #e7754b14c80249eaaa0844afea3f4c84 {
-    margin-top: 200px;
+  #more-on-the-way {
+    padding: 20px 0px 80px 0px;
   }
+  /* - - - top icon, figure out why this overflow is broken - - - */
   .modal {
     display: flex;
     background-color: black;
@@ -525,6 +520,7 @@ li {
   /* - - - design - - - */
   #Design {
     background-color: transparent;
+  
   }
   #design-content {
     display: flex;
@@ -532,17 +528,16 @@ li {
     flex-direction: column;
     justify-content: center;
     width: 100vw;
-    overflow: scroll;
-    bottom: 55px;
+    overflow-x: scroll; 
   }
   .designImg {
-    width: 90vw;
     height: auto;
     margin: 20px 0px 20px 0px;
   }
-  #dest-dev-small {
-    margin: -50px 0px -50px 0px;
+  #custombottles {
+    padding-bottom: 20px;
   }
+  
   /* - - - footer - - - */
   #mobile-footer-container {
     display: flex;
@@ -590,3 +585,5 @@ li {
     opacity: 0.2;
   }
 }
+
+/* - - - fix overflow x on web dev and top margin on web dev -- */

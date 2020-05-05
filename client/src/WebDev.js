@@ -29,11 +29,14 @@ class WebDev extends React.Component {
         <img id='87b0054d983542baa7735240d057593f' alt='park burlington thumb' className='webdev-thumb' onClick={this.openModal} src='Images/parkBTV.png'></img>
         <h4>Re-designing Burlington Vermont's parking interface<br></br><a id='park-btv-link' href='https://park-burlington.herokuapp.com/'>See it live here!</a></h4>
           <img id='e7754b14c80249eaaa0844afea3f4c84' alt='yelpington thumb' className='webdev-thumb' onClick={this.openModal} src='Images/yelpington.png'></img>
+          <h4>Geo Locating Burlington, VT businesses with React</h4>
           <img id='5666b343d9bc43c892735bc1c6a53e8d' alt='tic tac toe thumb' className='webdev-thumb' onClick={this.openModal} src='Images/TicTac.png'></img>
+          <h4>Classic Tic Tac Toe in JavaScript</h4>
           <img id='171415a1c6d745d39dda2471215219cb' alt='geo vermonter thumb' className='webdev-thumb' onClick={this.openModal} src='Images/geoVT.png'>
           </img>
+          <h4>Geo location guessing game in JavaScript</h4>
           <div className='more-to-come'>
-          <h3>More on the way, stay tuned...</h3>
+          <h3 id='more-on-the-way'>More on the way, stay tuned...</h3>
           </div>
         </div>
         {this.state.modalDisplay ? <Modal closeModal={this.closeModal} currentModal={this.state.currentModal} /> : null}
