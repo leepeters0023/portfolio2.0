@@ -29,6 +29,7 @@ h4 {
   font-size: 20px;
   font-family: "Open Sans", Helvetica;
   text-align: center;
+  z-index: 1;
 }
 p {
   font-size: 16pt;
@@ -421,6 +422,7 @@ li {
     font-size: 5vw;
     text-align: center;
   }
+  
   #home-portrait {
     display: none;
   }

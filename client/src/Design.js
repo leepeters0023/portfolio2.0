@@ -4,13 +4,16 @@ class Design extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      modalDisplay: false
+      modalDisplay: false,
+      currentModal: ''
     }
   }
   openModal = (event) => {
     this.setState({
-      modalDisplay: true
+      modalDisplay: true,
+      currentModal: event.target.id
     })
+  
   }
   closeModal = (event) => {
     this.setState({
@@ -22,7 +25,7 @@ class Design extends React.Component {
     return (
       <div id='Design'>
         <div id='design-content'>
-          <img src='/Images/HollywoodBowl-2.jpg' alt='hollywoodbowl2' id='HollywoodBowl' className='designImg'></img>
+          <img src='/Images/HollywoodBowl-2.jpg' alt='hollywoodbowl2' id='HollywoodBowl' className='designImg' data='test test'></img>
           <img src='/Images/alligiance.png' alt='alligiance-logo' id='alligiance' className='designImg'></img>
           <img src='/Images/mrp.png' alt='mar river path' id='mrp' className='designImg'></img>
           <img src='Images/lyftSelect.png' alt='lyft select' id='lyft-select' className='designImg'></img>
@@ -42,10 +45,24 @@ class Design extends React.Component {
           <img src='/Images/cleanBottleInsta3.jpg' alt='clean bottle instagram' id='cleanBottleInsta3' className='designImg'></img>
           <img src='/Images/custombottles.jpg' alt='custom clean bottles' id='custombottles' className='designImg'></img>
         </div>
-
+        {this.state.modalDisplay ? <Modal closeModal={this.closeModal} currentModal={this.state.currentModal} /> : null}
       </div>
     )
   }
+}
+function Modal(props) {
+  return (
+    <div id='webDev'>
+      <div id='designModal' className='modal'>
+        <div className='video'>
+          <div>
+        <h4>{props.currentModal}</h4>
+        </div>
+      </div>
+      <button className='headerButton' id='closeModalButton' onClick={props.closeModal}>Close</button>
+    </div>
+    </div >
+  )
 }
 
 export default Design
