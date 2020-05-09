@@ -26,6 +26,7 @@ class WebDev extends React.Component {
     return (
       <div id='web-dev-container'>
         <div id='web-dev'>
+        <img id='96320ec895dd4060b77559a1cb3de073' alt='portfolio thumb' className='webdev-thumb' onClick={this.openModal} src='Images/portfolio-thumb.png'></img>
         <img id='87b0054d983542baa7735240d057593f' alt='park burlington thumb' className='webdev-thumb' onClick={this.openModal} src='Images/parkBTV.png'></img>
         <h4>Re-designing Burlington Vermont's parking interface<br></br><a id='park-btv-link' href='https://park-burlington.herokuapp.com/'>See it live here!</a></h4>
           <img id='e7754b14c80249eaaa0844afea3f4c84' alt='yelpington thumb' className='webdev-thumb' onClick={this.openModal} src='Images/yelpington.png'></img>
