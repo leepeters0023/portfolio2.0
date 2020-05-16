@@ -106,7 +106,6 @@ li {
   display: flex;
   background-color: transparent;
   width: 65%;
-
 }
 .hello-word {
   margin:auto;
@@ -114,26 +113,22 @@ li {
   display: flex;
   flex-direction: row;
 }
-
 /* H Animation */
 .H-left-stroke {
   stroke-dasharray: 124px;
   stroke-dashoffset: 124px;
   animation: H-left-move 20s ease forwards;
 }
-
 .H-mid-stroke {
   stroke-dasharray: 37px;
   stroke-dashoffset: 37px;
   animation: H-mid-move 9s ease forwards;
 }
-
 .H-right-stroke {
   stroke-dasharray: 124px;
   stroke-dashoffset: 124px;
   animation: H-right-move 13s ease forwards;
 }
-
 @keyframes H-left-move {
   0% {
     stroke-dashoffset: 124px;
@@ -145,7 +140,6 @@ li {
     stroke-dashoffset: 0px;
   }
 }
-
 @keyframes H-mid-move {
   0% {
     stroke-dashoffset: 37px;
@@ -160,7 +154,6 @@ li {
     stroke-dashoffset: 0px;
   }
 }
-
 @keyframes H-right-move {
   0% {
     stroke-dashoffset: 124px;
@@ -175,33 +168,27 @@ li {
     stroke-dashoffset: 0px;
   }
 }
-
 /* E Animation */
-
 .E-left-stroke {
   stroke-dasharray: 124px;
   stroke-dashoffset: 124px;
   animation: E-left-move 20s ease forwards;
 }
-
 .E-top-stroke {
   stroke-dasharray: 47px;
   stroke-dashoffset: 47px;
   animation: E-top-move 10s ease forwards;
 }
-
 .E-mid-stroke {
   stroke-dasharray: 42px;
   stroke-dashoffset: 42px;
   animation: E-mid-move 10s ease forwards;
 }
-
 .E-bottom-stroke {
   stroke-dasharray: 47px;
   stroke-dashoffset: 47px;
   animation: E-bottom-move 10s ease forwards;
 }
-
 @keyframes E-left-move {
   0% {
     stroke-dashoffset: 124px;
@@ -216,7 +203,6 @@ li {
     stroke-dashoffset: 0px;
   }
 }
-
 @keyframes E-top-move {
   0% {
     stroke-dashoffset: 47px;
@@ -231,7 +217,6 @@ li {
     stroke-dashoffset: 0px;
   }
 }
-
 @keyframes E-mid-move {
   0% {
     stroke-dashoffset: 42px;
@@ -246,7 +231,6 @@ li {
     stroke-dashoffset: 0px;
   }
 }
-
 @keyframes E-bottom-move {
   0% {
     stroke-dashoffset: 47px;
@@ -261,21 +245,17 @@ li {
     stroke-dashoffset: 0px;
   }
 }
-
 /* L One Animation */
-
 .L-one-long-stroke {
   stroke-dasharray: 124px;
   stroke-dashoffset: 124px;
   animation: L-one-long-move 20s ease forwards;
 }
-
 .L-one-short-stroke {
   stroke-dasharray: 44px;
   stroke-dashoffset: 44px;
   animation: L-one-short-move 10s ease forwards;
 }
-
 @keyframes L-one-long-move {
   0% {
     stroke-dashoffset: 124px;
@@ -290,7 +270,6 @@ li {
     stroke-dashoffset: 0px;
   }
 }
-
 @keyframes L-one-short-move {
   0% {
     stroke-dashoffset: 44px;
@@ -305,21 +284,17 @@ li {
     stroke-dashoffset: 0px;
   }
 }
-
 /* L Two Animation */
-
 .L-two-long-stroke {
   stroke-dasharray: 124px;
   stroke-dashoffset: 124px;
   animation: L-two-long-move 20s ease forwards;
 }
-
 .L-two-short-stroke {
   stroke-dasharray: 44px;
   stroke-dashoffset: 44px;
   animation: L-two-short-move 10s ease forwards;
 }
-
 @keyframes L-two-long-move {
   0% {
     stroke-dashoffset: 124px;
@@ -334,7 +309,6 @@ li {
     stroke-dashoffset: 0px;
   }
 }
-
 @keyframes L-two-short-move {
   0% {
     stroke-dashoffset: 44px;
@@ -349,15 +323,12 @@ li {
     stroke-dashoffset: 0px;
   }
 }
-
 /* O Animation */
-
 .O-stroke {
   stroke-dasharray: 302px;
   stroke-dashoffset: 302px;
   animation: O-move 20s ease forwards;
 }
-
 @keyframes O-move {
   0% {
     stroke-dashoffset: 302px;
@@ -372,15 +343,12 @@ li {
     stroke-dashoffset: 0px;
   }
 }
-
 /* Red Dot Animation */
-
 .red-dot {
   stroke-width: 44px;
   stroke-linecap: round;
   animation: red-dot-grow 8s ease-out forwards;
 }
-
 @keyframes red-dot-grow {
   0% {
     stroke-width: 0px;
@@ -666,9 +634,6 @@ li {
 
 /* - - mobile - all - - */
 @media screen and (max-width: 600px) {
-  .waddle {
-    display: none;
-  }
   #header {
     display: none;
   }
@@ -682,12 +647,23 @@ li {
     align-items: center;
     background-color: transparent;
   }
-  #home-landing {
-    height: 50vh;
+  .hello-parent {
     display: flex;
+    background-color: transparent;
+    width: 55%;
+  }
+  .hello-word {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+  }
+  #home-landing {
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-items: center;
-    flex-direction: column;
   }
   #home-text-greeting {
     display: flex;
@@ -713,16 +689,26 @@ li {
     font-size: 5vw;
     text-align: center;
   }
-  
   #home-portrait {
     display: none;
   }
   #home-portrait-mobile {
     display: flex;
-    justify-self: center;
-    align-self: center;
-    width: 50vw;
+    height: 30vh;
+    align-self: flex-start;
+    position: relative;
+    animation: fadeInAnimation ease 7s ;
+    animation-iteration-count: 1; 
+    animation-fill-mode: both;
   }
+@keyframes fadeInAnimation { 
+  0% { 
+      opacity: 0; 
+  } 
+  100% { 
+      opacity: 1; 
+   } 
+} 
   #home-about {
     display: flex;
     align-content: center;
@@ -876,6 +862,9 @@ li {
   .mobile-footer-logo:active {
     background-color: hotpink;
     opacity: 0.2;
+  }
+  .svg-illu {
+    display: none;
   }
 }
 
