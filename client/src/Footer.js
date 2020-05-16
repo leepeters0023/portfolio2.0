@@ -11,10 +11,10 @@ function Footer() {
         </a>
         <div id='footerLogos'>
           <a href='https://linkedin.com/in/leepeters23/'>
-            <img src='Images/linkedin.svg' alt='linkedIn logo' className='logo'></img>
+            <img src='Images/linkedin.svg' alt='linkedIn logo' target="_blank" className='logo'></img>
           </a>
           <a href='https://github.com/leepeters0023'>
-            <img src='Images/github.svg' alt='github logo' className='logo'></img>
+            <img src='Images/github.svg' alt='github logo' target="_blank" className='logo'></img>
           </a>
         </div>
       </div>
