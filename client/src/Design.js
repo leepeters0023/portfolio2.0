@@ -44,6 +44,7 @@ class Design extends React.Component {
           <img src='Images/destdev.png' alt='destination development' id='destdev' className='designImg'></img>
           <div className='item-description'><h4>Custom logo for Destination Development, a Colorado based tourism organization</h4></div>
           <img src='Images/destinationdev.png' id='dest-dev-small' alt='destination development' className='designImg'></img>
+          <div className='item-description'><h4>More Destination Development, this time a little more modern</h4></div>
           <img src='Images/bloom.png' alt='bloom graphic' id='bloom' className='designImg'></img>
           <div className='item-description'><h4>Label for Clean Bottle Bloom Infusion Pods, a tea like product</h4></div>
           <img src='Images/sqlabel.png' alt='clean bottle square logo' id='sqlabel'className='designImg'></img>

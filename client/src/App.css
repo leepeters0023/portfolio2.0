@@ -377,7 +377,7 @@ li {
 #home-portrait {
   margin-left: -75px;
   margin-bottom: -5px;
-  
+  padding-top: 30px;
 }
 #home-portrait-mobile {
   display: none;
@@ -429,6 +429,7 @@ li {
   overflow: hidden;
   position: relative;
   top: 100px;
+  margin-bottom: 100px;
 }
 #design-content {
   display: flex;

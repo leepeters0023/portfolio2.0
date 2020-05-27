@@ -42,7 +42,6 @@ class WebDev extends React.Component {
           </div>
         </div>
         {this.state.modalDisplay ? <Modal closeModal={this.closeModal} currentModal={this.state.currentModal} /> : null}
-        
       </div>
     )
   }
