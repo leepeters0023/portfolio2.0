@@ -44,6 +44,10 @@ li {
   list-style-type: disc;
   list-style-position: inside;
 }
+.item-description {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 /* - - ^ body, all ^ - - */
 
@@ -91,9 +95,10 @@ li {
   align-items: flex-end;
   justify-content: flex-end;
   width: 100vw;
-  background-color: transparent;
+  background: white;
   height: 75px;
-  z-index: 1;
+  position: fixed;
+  z-index: 100;
 }
 #headerButtons {
   display: flex;
@@ -372,6 +377,7 @@ li {
 #home-portrait {
   margin-left: -75px;
   margin-bottom: -5px;
+  
 }
 #home-portrait-mobile {
   display: none;
@@ -420,6 +426,9 @@ li {
 /* - - - design - - - */
 #Design {
   background-color: transparent;
+  overflow: hidden;
+  position: relative;
+  top: 100px;
 }
 #design-content {
   display: flex;
@@ -499,12 +508,14 @@ li {
 }
 #web-dev {
   display: flex;
-  overflow-y: auto;
+  overflow: hidden;
+  position: relative;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  height: 95%;
   width: 100vw;
+  top: 100px;
+  margin-bottom: 100px;
 }
 #park-btv-link {
   text-decoration: none;
@@ -736,10 +747,6 @@ li {
     padding: 5px 5px 5px 5px;
   }
   #home-call-to-action {
-    padding: 20px 0px 50px 0px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    text-align: center;
     border-top: solid black 3px;
   }
   /* - - - webDev - - - */
@@ -799,7 +806,6 @@ li {
   /* - - - design - - - */
   #Design {
     background-color: transparent;
-  
   }
   #design-content {
     display: flex;
