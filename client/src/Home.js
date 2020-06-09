@@ -34,20 +34,15 @@ function Home(props) {
             </g>
           </svg>
         </div>
-
         <div id="home-portrait">
           <a id="home-portrait-desktop" href="https://imgur.com/jcWzmNS"><img src="https://i.imgur.com/jcWzmNS.png?2" title="source: imgur.com" /></a>
         </div>
         <img id="home-portrait-mobile" src="Images/cartoon1.svg" />
-
       </div>
-
-
       <div id='home-about'>
         <h2>I'm Lee</h2>
         <p id='about-p'>Thanks for stopping by. I’m a front end web developer specializing in bespoke, single origin, grass fed, gluten free, and slow roasted apps and websites.<br></br><br></br>I like to make things more efficient and look pretty using the arsenal at my disposal listed below. I’ve worked in a variety of environments, from startups to freelancing for anyone willing to support my fancy coffee habit. When not coding or designing, I enjoy never being satisfied with my own work, photography, trail running, backcountry skiing, toast, and occasionally sharing my unpopular opinions about who makes the best beer.<br></br><br></br>Hungry for more? Have a closer look at my work history on my LinkedIn or check out my code on Github - both linked below.</p>
       </div>
-
       <div id='home-skills'>
         <div id="gears">
           <svg class="svg-illu" viewBox="0 0 901.806 1201.411">
@@ -162,7 +157,6 @@ function Home(props) {
           </ul>
         </div>
       </div>
-
       <div id='home-call-to-action'>
         <h3>Let's build beautiful, meaningful things together</h3>
       </div>

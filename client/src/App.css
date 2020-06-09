@@ -8,7 +8,6 @@
 *:focus {
   outline: none;
 }
-
 #mobile-footer-container {
   display: none;
 }
@@ -398,7 +397,7 @@ li {
   height: auto;
   color: white;
   background-color: #7e7e7e;
-  padding: 20px 50px 20px 50px;
+  padding: 40px 50px 40px 50px;
 }
 #home-skills {
   display: flex;
@@ -409,7 +408,7 @@ li {
   padding-bottom: 40px;
 }
 #home-call-to-action {
-  padding: 20px 50px 20px 50px;
+  padding: 30px 50px 30px 50px;
   text-align: center;
   border-top: solid black 3px;
 }
@@ -424,6 +423,22 @@ li {
 /* - - ^ home ^ - - */
 
 /* - - - design - - - */
+#masonry-container {
+  padding-top: 100px;
+  width: 95vw;
+}
+.my-masonry-grid {
+  display: flex; 
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+.designImg { 
+  margin: 30px;
+}
+/* - - 
 #Design {
   background-color: transparent;
   overflow: hidden;
@@ -438,17 +453,7 @@ li {
   padding: 20px;
   width: 99vw;
 }
-#design-content::-webkit-scrollbar {
-  width: 2em;
-}
-#design-content::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-#design-content::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slategrey;
-}
+
 .designImg {
   align-self: center;
   height: 100%;
@@ -459,14 +464,9 @@ li {
   transition: transform 0.2s;
   cursor: unset;
 }
-.designImg:hover {
-  transform: scale(1.1);
-  z-index: 10;
-  background-color: white;
-}
-
+*/
 #HollywoodBowl {
-  width: 50vw;
+  width: 30vw;
 }
 #alligiance {
   height: 50vh;
@@ -487,10 +487,10 @@ li {
   height: 50vh;
 }
 #jennie-poster {
-  height: 50vh;
+  width: 30vw;
 }
 #HollywoodBowl1 {
-  width: 50vw;
+  width: 30vw;
 }
 #cleanBottleInsta2 {
   height: 60vh;
@@ -549,9 +549,10 @@ li {
 .webdev-thumb:hover {
   transform: scale(1.1)
 }
-
+#more-on-the-way {
+  padding: 30px 0px 30px 0px;
+}
 /* - - - top icon, figure out why this overflow is broken - - - */
-
 .modal {
   display: flex;
   background-color: black;
@@ -609,6 +610,8 @@ li {
   flex-direction: column;
   width: 100vw;
   height: 175px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 #footerButton {
   background-color: transparent;
@@ -658,6 +661,7 @@ li {
     flex-direction: column;
     align-items: center;
     background-color: transparent;
+    margin-bottom: 50px;
   }
   .hello-parent {
     display: flex;
@@ -746,22 +750,30 @@ li {
     justify-content: flex-end;
     width: 100vw;
     padding: 5px 5px 5px 5px;
+    margin-bottom: 20px;
   }
   #home-call-to-action {
-    border-top: solid black 3px;
+    border-top: solid black 10px;
+    padding: 5px 5px 5px 5px;
   }
   /* - - - webDev - - - */
+  #web-dev-container {
+    margin-top: -60px;
+  }
   #web-dev {
     display: flex;
     align-items: center;
     flex-direction: column;
     height: fit-content;
   }
+  .webdev-thumb {
+    margin-top: 20px;
+  }
   #web-dev::-webkit-scrollbar {
     display: none;
   }
   #more-on-the-way {
-    padding: 20px 0px 80px 0px;
+    padding: 20px 0px 20px 0px;
   }
   /* - - - top icon, figure out why this overflow is broken - - - */
   .modal {
@@ -808,22 +820,80 @@ li {
   #Design {
     background-color: transparent;
   }
-  #design-content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    width: 100vw;
-    overflow-x: scroll; 
+  #masonry-container {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: auto;
   }
-  .designImg {
-    height: auto;
-    margin: 20px 0px 20px 0px;
+  .my-masonry-grid {
+    display: flex; 
+    flex-direction: column;
+  }
+  .my-masonry-grid_column {
+    padding-left: 0px; /* gutter size */
+    background-clip: inherit;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  .designImg { 
+    margin-top: 10px;
+  }
+  #HollywoodBowl {
+    width: 70vw;
+  }
+  #alligiance {
+    height: 40vh;
+  }
+  #mrp {
+    height: 35vh;
+  }
+  #lyft-select {
+    height: 35vh;
+  }
+  #heartbay{
+    height: 40vh;
+  }
+  #destdev {
+    height: 40vh;
+  }
+  #dest-dev-small {
+    height: 40vh;
+  }
+  #bloom {
+    height: 40vh;
+  }
+  #sqlabel {
+    height: 40vh;
+  }
+  #jennie-poster {
+    width: 75vw;
+  }
+  #HollywoodBowl1 {
+    width: 75vw;
+  }
+  #Cleanbottle8 {
+    height: 40vh;
+  }
+  #cleanBottleSellSheet {
+    height: 50vh;
+  }
+  #cleanBottleInsta2 {
+    height: 50vh;
+  }
+  #cleanBottleInsta3 {
+    height: 50vh;
   }
   #custombottles {
-    padding-bottom: 20px;
+    height: 40vh;
   }
-  
+  #cleanBottle8 {
+    height: 40vh;
+  }
+
   /* - - - footer - - - */
   #mobile-footer-container {
     display: flex;
