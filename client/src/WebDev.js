@@ -26,6 +26,8 @@ class WebDev extends React.Component {
     return (
       <div id='web-dev-container'>
         <div id='web-dev'>
+        <img id='baf453d4db5947d5b653480175c4c934' alt='portfolio thumb' className='webdev-thumb' onClick={this.openModal} src='Images/twinthread-price.png'></img>
+        <div className='item-description'><h4>TwinThread.com pricing page and submission form</h4></div>
         <img id='96320ec895dd4060b77559a1cb3de073' alt='portfolio thumb' className='webdev-thumb' onClick={this.openModal} src='Images/portfolio-thumb.png'></img>
         <div className='item-description'><h4>A video walk through of THIS website</h4></div>
         <img id='87b0054d983542baa7735240d057593f' alt='park burlington thumb' className='webdev-thumb' onClick={this.openModal} src='Images/parkBTV.png'></img>
