@@ -767,7 +767,7 @@ li {
     height: fit-content;
   }
   .webdev-thumb {
-    margin-top: 20px;
+    margin-top: 40px;
   }
   #web-dev::-webkit-scrollbar {
     display: none;
