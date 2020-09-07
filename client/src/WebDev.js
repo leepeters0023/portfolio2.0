@@ -7,15 +7,24 @@ import {
   Text
 } from 'rebass'
 import { Flex, Box, Text, Heading, Image } from "rebass/styled-components";
-import { Videos } from 'client/src/Videos.js'
+import { videos } from './Videos'
 
-  export const WebDev = ({videoId, alt, className, src, copy}) => {
-    const [isModal, setIsModal] = useState(false);
+export const WebDev = ( videos ) => {
+  const [isModal, setIsModal] = useState(false);
 
-    return (
-     
-    )
-  }
+  return (
+    <Flex mx={-2}>
+    {videos.map(({ videoId, alt, className, src, copy }, i) =>
+    <Box width={1 / 2} px={2}>
+        <Text p={1} color='background' bg='primary'>
+          Half
+    </Text>
+      </Box>
+    )}
+    </Flex>
+
+  )
+}
 
 function Modal(props) {
   return (

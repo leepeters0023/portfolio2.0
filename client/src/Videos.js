@@ -1,4 +1,4 @@
-export const Videos = [
+export const videos = [
   {
     videoId: 'baf453d4db5947d5b653480175c4c934',
     alt: 'twinthread-pricing-thumb',
