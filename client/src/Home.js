@@ -41,7 +41,7 @@ function Home(props) {
       </div>
       <div id='home-about'>
         <h2>I'm Lee</h2>
-        <p id='about-p'>Thanks for stopping by. I’m a front end web developer specializing in bespoke, single origin, grass fed, gluten free, and slow roasted apps and websites.<br></br><br></br>I like to make things more efficient and look pretty using the arsenal at my disposal listed below. I’ve worked in a variety of environments, from startups to freelancing for anyone willing to support my fancy coffee habit. When not coding or designing, I enjoy never being satisfied with my own work, photography, trail running, backcountry skiing, toast, and occasionally sharing my unpopular opinions about who makes the best beer.<br></br><br></br>Hungry for more? Have a closer look at my work history on my LinkedIn or check out my code on Github - both linked below.</p>
+        <p id='about-p'>Thanks for stopping by. I’m a front end web developer specializing in bespoke, single origin, grass fed, gluten free, and slow roasted apps and websites.<br></br><br></br>I like to make things more efficient and look pretty using the arsenal at my disposal listed below. I’ve worked in a variety of environments, from startups to freelancing for anyone willing to support my coffee habit. When not coding or designing, I enjoy never being satisfied with my own work, photography, trail running, backcountry skiing, toast, and occasionally sharing my unpopular opinions about Vermont IPAs.<br></br><br></br>Hungry for more? Have a closer look at my work history on my LinkedIn or check out my code on Github - both linked below.</p>
       </div>
       <div id='home-skills'>
         <div id="gears">
@@ -133,8 +133,8 @@ function Home(props) {
             <li>Enough to be dangerous: Python</li>
             <li>Backend: Node.js, Express.js</li>
             <li>Frontend: React, CSS, HTML </li>
-            <li>Database: MongoDB, Firebase</li>
-            <li>Version control: Git / Github </li>
+            <li>Database: GraphQL, MongoDB, Firebase</li>
+            <li>Version control: Git / Github (duh) </li>
           </ul>
           <br></br>
           <h3>Design</h3>
