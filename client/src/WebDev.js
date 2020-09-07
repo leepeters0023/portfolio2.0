@@ -9,15 +9,15 @@ import {
 import { Flex, Box, Text, Heading, Image } from "rebass/styled-components";
 import { videos } from './Videos'
 
-export const WebDev = ( videos ) => {
+export const WebDev = () => {
   const [isModal, setIsModal] = useState(false);
 
   return (
     <Flex mx={-2}>
     {videos.map(({ videoId, alt, className, src, copy }, i) =>
     <Box width={1 / 2} px={2}>
-        <Text p={1} color='background' bg='primary'>
-          Half
+    <Text p={1} color='background' bg='primary'>
+         
     </Text>
       </Box>
     )}
