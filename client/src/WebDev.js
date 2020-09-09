@@ -1,16 +1,22 @@
 import React, { useState } from 'react'
-import { Flex, Box, Text, Heading, Image } from "rebass/styled-components";
+import { Flex, Box, Text, Heading, Image } from "rebass";
 import { videos } from './Videos'
 
 const WebDev = () => {
   const [isModal, setIsModal] = useState(false);
 
   return (
-    <Flex mx={-2}>
+    <Flex flexWrap='wrap' mx={-2}>
     {videos.map(({ videoId, alt, className, src, copy }, i) =>
     <Box width={1 / 2} px={2}>
+      <Image 
+      id={videoId} 
+      alt={alt} 
+      className={className} 
+      src={src} 
+      />
     <Text p={1} color='background' bg='primary'>
-         
+    {copy}
     </Text>
       </Box>
     )}
