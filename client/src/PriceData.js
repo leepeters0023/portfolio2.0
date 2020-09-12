@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import styled, { css, ThemeConsumer } from "styled-components";
 import { Flex, Box, Text, Heading, Image } from "rebass/styled-components";
 
-
 const Card = styled(Flex)`
   background: white;
   flex-direction: column;
@@ -45,7 +44,10 @@ const SubFeature = styled(Text)`
 `;
 const SmallButton = styled(Button)``;
 
-export const Pricing = ({ data: { title, subtitle, pricingTiers }, isFirst }) => {
+export const Pricing = ({
+  data: { title, subtitle, pricingTiers },
+  isFirst,
+}) => {
   const isTabletOrMobile = useBreakpoint(2, "maxWidth");
   const containerRef = useRef(null);
   const { width: containerWidth } = useComponentSize(containerRef);
@@ -53,7 +55,12 @@ export const Pricing = ({ data: { title, subtitle, pricingTiers }, isFirst }) =>
   return (
     <StretchBG pt={isFirst ? 6 : 0} flex={1} bgColor="gradient">
       <WideContent py={5} px={3} style={{ position: "relative" }}>
-        <Flex flexDirection="column" alignItems="center" width="100%" ref={containerRef}>
+        <Flex
+          flexDirection="column"
+          alignItems="center"
+          width="100%"
+          ref={containerRef}
+        >
           {!!title && (
             <Text
               fontSize={[3, 4, 5]}
@@ -82,11 +89,23 @@ export const Pricing = ({ data: { title, subtitle, pricingTiers }, isFirst }) =>
 
           {!isTabletOrMobile && (
             <Card mb={4} padding={4} width="90%" flexDirection="column">
-              <Flex ml="225px" flexDirection="row" alignItems="baseline" justifyContent="flex-end">
+              <Flex
+                ml="225px"
+                flexDirection="row"
+                alignItems="baseline"
+                justifyContent="flex-end"
+              >
                 {pricingTiers.map(({ title, subtitle, icon }, i) => (
-                  <Flex mr={4} ml={3} flexDirection="column" alignContent="center">
+                  <Flex
+                    mr={4}
+                    ml={3}
+                    flexDirection="column"
+                    alignContent="center"
+                  >
                     <Image
-                      src={icon.asset.localFile?.publicURL || icon.asset.fluid.src}
+                      src={
+                        icon.asset.localFile?.publicURL || icon.asset.fluid.src
+                      }
                       alt={icon.alt}
                     />
                     <Text
@@ -118,78 +137,82 @@ export const Pricing = ({ data: { title, subtitle, pricingTiers }, isFirst }) =>
               </Flex>
               <SubFeature>Platform Features</SubFeature>
               <Box>
-                {platformFeatures.map(({ id, feature, basic, professional, enterprise }, i) => (
-                  <table cellspacing="0" width="100%" table-layout="fixed">
-                    <tr key={id}>
-                      <td
-                        style={{ padding: "10px" }}
-                        padding="15px"
-                        width="25%"
-                        bgColor={id % 2 === 0 ? "transparent" : "f0f0f0"}
-                      >
-                        {feature}
-                      </td>
-                      <td
-                        align="center"
-                        width="25%"
-                        bgColor={id % 2 === 0 ? "transparent" : "f0f0f0"}
-                      >
-                        {basic ? <Icon name="blueCheck" /> : ""}
-                      </td>
-                      <td
-                        align="center"
-                        width="25%"
-                        bgColor={id % 2 === 0 ? "transparent" : "f0f0f0"}
-                      >
-                        {professional ? <Icon name="blueCheck" /> : ""}
-                      </td>
-                      <td
-                        align="center"
-                        width="25%"
-                        bgColor={id % 2 === 0 ? "transparent" : "f0f0f0"}
-                      >
-                        {enterprise ? <Icon name="blueCheck" /> : ""}
-                      </td>
-                    </tr>
-                  </table>
-                ))}
+                {platformFeatures.map(
+                  ({ id, feature, basic, professional, enterprise }, i) => (
+                    <table cellspacing="0" width="100%" table-layout="fixed">
+                      <tr key={id}>
+                        <td
+                          style={{ padding: "10px" }}
+                          padding="15px"
+                          width="25%"
+                          bgColor={id % 2 === 0 ? "transparent" : "f0f0f0"}
+                        >
+                          {feature}
+                        </td>
+                        <td
+                          align="center"
+                          width="25%"
+                          bgColor={id % 2 === 0 ? "transparent" : "f0f0f0"}
+                        >
+                          {basic ? <Icon name="blueCheck" /> : ""}
+                        </td>
+                        <td
+                          align="center"
+                          width="25%"
+                          bgColor={id % 2 === 0 ? "transparent" : "f0f0f0"}
+                        >
+                          {professional ? <Icon name="blueCheck" /> : ""}
+                        </td>
+                        <td
+                          align="center"
+                          width="25%"
+                          bgColor={id % 2 === 0 ? "transparent" : "f0f0f0"}
+                        >
+                          {enterprise ? <Icon name="blueCheck" /> : ""}
+                        </td>
+                      </tr>
+                    </table>
+                  )
+                )}
               </Box>
               <SubFeature>Analysis Packs</SubFeature>
               <Box>
-                {analysisPacks.map(({ id, feature, basic, professional, enterprise }, i) => (
-                  <table cellspacing="0" width="100%" table-layout="fixed">
-                    <tr key={id}>
-                      <td
-                        style={{ padding: "10px" }}
-                        width="25%"
-                        bgColor={id % 2 === 0 ? "transparent" : "f0f0f0"}
-                      >
-                        {feature}
-                      </td>
-                      <td
-                        align="center"
-                        width="25%"
-                        bgColor={id % 2 === 0 ? "transparent" : "f0f0f0"}
-                      >
-                        {basic ? <Icon name="blueCheck" /> : ""}
-                      </td>
-                      <td
-                        align="center"
-                        width="25%"
-                        bgColor={id % 2 === 0 ? "transparent" : "f0f0f0"}
-                      >
-                        {professional ? <Icon name="blueCheck" /> : ""}
-                      </td>
-                      <td
-                        align="center"
-                        width="25%"
-                        bgColor={id % 2 === 0 ? "transparent" : "f0f0f0"}
-                      >
-                        {enterprise ? <Icon name="blueCheck" /> : ""}
-                      </td>
-                    </tr>
-                  </table>
-                ))}
+                {analysisPacks.map(
+                  ({ id, feature, basic, professional, enterprise }, i) => (
+                    <table cellspacing="0" width="100%" table-layout="fixed">
+                      <tr key={id}>
+                        <td
+                          style={{ padding: "10px" }}
+                          width="25%"
+                          bgColor={id % 2 === 0 ? "transparent" : "f0f0f0"}
+                        >
+                          {feature}
+                        </td>
+                        <td
+                          align="center"
+                          width="25%"
+                          bgColor={id % 2 === 0 ? "transparent" : "f0f0f0"}
+                        >
+                          {basic ? <Icon name="blueCheck" /> : ""}
+                        </td>
+                        <td
+                          align="center"
+                          width="25%"
+                          bgColor={id % 2 === 0 ? "transparent" : "f0f0f0"}
+                        >
+                          {professional ? <Icon name="blueCheck" /> : ""}
+                        </td>
+                        <td
+                          align="center"
+                          width="25%"
+                          bgColor={id % 2 === 0 ? "transparent" : "f0f0f0"}
+                        >
+                          {enterprise ? <Icon name="blueCheck" /> : ""}
+                        </td>
+                      </tr>
+                    </table>
+                  )
+                )}
               </Box>
               <SubFeature>Predictive Applications</SubFeature>
               <Box>
@@ -232,40 +255,42 @@ export const Pricing = ({ data: { title, subtitle, pricingTiers }, isFirst }) =>
               </Box>
               <SubFeature>Development Tools</SubFeature>
               <Box>
-                {developmentTools.map(({ id, feature, basic, professional, enterprise }, i) => (
-                  <table cellspacing="0" width="100%" table-layout="fixed">
-                    <tr key={id}>
-                      <td
-                        style={{ padding: "10px" }}
-                        width="25%"
-                        bgColor={id % 2 === 0 ? "transparent" : "f0f0f0"}
-                      >
-                        {feature}
-                      </td>
-                      <td
-                        align="center"
-                        width="25%"
-                        bgColor={id % 2 === 0 ? "transparent" : "f0f0f0"}
-                      >
-                        {basic ? <Icon name="blueCheck" /> : ""}
-                      </td>
-                      <td
-                        align="center"
-                        width="25%"
-                        bgColor={id % 2 === 0 ? "transparent" : "f0f0f0"}
-                      >
-                        {professional ? <Icon name="blueCheck" /> : ""}
-                      </td>
-                      <td
-                        align="center"
-                        width="25%"
-                        bgColor={id % 2 === 0 ? "transparent" : "f0f0f0"}
-                      >
-                        {enterprise ? <Icon name="blueCheck" /> : ""}
-                      </td>
-                    </tr>
-                  </table>
-                ))}
+                {developmentTools.map(
+                  ({ id, feature, basic, professional, enterprise }, i) => (
+                    <table cellspacing="0" width="100%" table-layout="fixed">
+                      <tr key={id}>
+                        <td
+                          style={{ padding: "10px" }}
+                          width="25%"
+                          bgColor={id % 2 === 0 ? "transparent" : "f0f0f0"}
+                        >
+                          {feature}
+                        </td>
+                        <td
+                          align="center"
+                          width="25%"
+                          bgColor={id % 2 === 0 ? "transparent" : "f0f0f0"}
+                        >
+                          {basic ? <Icon name="blueCheck" /> : ""}
+                        </td>
+                        <td
+                          align="center"
+                          width="25%"
+                          bgColor={id % 2 === 0 ? "transparent" : "f0f0f0"}
+                        >
+                          {professional ? <Icon name="blueCheck" /> : ""}
+                        </td>
+                        <td
+                          align="center"
+                          width="25%"
+                          bgColor={id % 2 === 0 ? "transparent" : "f0f0f0"}
+                        >
+                          {enterprise ? <Icon name="blueCheck" /> : ""}
+                        </td>
+                      </tr>
+                    </table>
+                  )
+                )}
               </Box>
               <Flex mr={2} justifyContent="flex-end">
                 {pricingTiers.map(({ button }, i) => (
@@ -288,7 +313,11 @@ export const Pricing = ({ data: { title, subtitle, pricingTiers }, isFirst }) =>
           )}
 
           {isTabletOrMobile && (
-            <Flex my={[4, 4, "120px"]} flexDirection="column" alignItems="center">
+            <Flex
+              my={[4, 4, "120px"]}
+              flexDirection="column"
+              alignItems="center"
+            >
               {pricingTiers.map(({ title, subtitle, icon, button }, i) => {
                 let tier;
                 if (title == "Basic") {
@@ -301,7 +330,14 @@ export const Pricing = ({ data: { title, subtitle, pricingTiers }, isFirst }) =>
                   tier = mobileEnterprise;
                 }
                 return (
-                  <Card px={4} pb={5} mb={[5, 5, 5, 0]} mt={[5, 5, 5, 0]} width={["100%", "550px"]} alignItems="flex-start">
+                  <Card
+                    px={4}
+                    pb={5}
+                    mb={[5, 5, 5, 0]}
+                    mt={[5, 5, 5, 0]}
+                    width={["100%", "550px"]}
+                    alignItems="flex-start"
+                  >
                     <Flex
                       pb={2}
                       mb={2}
@@ -310,7 +346,10 @@ export const Pricing = ({ data: { title, subtitle, pricingTiers }, isFirst }) =>
                       alignContent="center"
                     >
                       <Image
-                        src={icon.asset.localFile?.publicURL || icon.asset.fluid.src}
+                        src={
+                          icon.asset.localFile?.publicURL ||
+                          icon.asset.fluid.src
+                        }
                         alt={icon.alt}
                         mt="-40px"
                       />
@@ -340,14 +379,18 @@ export const Pricing = ({ data: { title, subtitle, pricingTiers }, isFirst }) =>
                       </Text>
                     </Flex>
                     <Features as="ul">
-                      {tier.map(section => (
+                      {tier.map((section) => (
                         <Flex flexDirection="column">
                           <li>
                             <strong>{section.title}</strong>
                           </li>
-                          {section.items.map(item => (
+                          {section.items.map((item) => (
                             <li>
-                              <Icon name={item.included ? "blueBoxWithCheck" : "blueBox"} />
+                              <Icon
+                                name={
+                                  item.included ? "blueBoxWithCheck" : "blueBox"
+                                }
+                              />
                               <Text ml={3}>{item.item}</Text>
                             </li>
                           ))}

@@ -112,7 +112,7 @@ li {
   width: 65%;
 }
 .hello-word {
-  margin:auto;
+  margin: auto;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -428,14 +428,14 @@ li {
   width: 95vw;
 }
 .my-masonry-grid {
-  display: flex; 
+  display: flex;
   width: auto;
 }
 .my-masonry-grid_column {
   padding-left: 30px; /* gutter size */
   background-clip: padding-box;
 }
-.designImg { 
+.designImg {
   margin: 30px;
 }
 /* - - 
@@ -471,7 +471,7 @@ li {
 #alligiance {
   height: 50vh;
 }
-#heartbay{
+#heartbay {
   height: 50vh;
 }
 #destdev {
@@ -526,8 +526,8 @@ li {
   padding: 0px 5px 0px 5px;
   border-radius: 5px;
 }
-#park-btv-link:hover{
-  opacity: .5;
+#park-btv-link:hover {
+  opacity: 0.5;
 }
 #web-dev::-webkit-scrollbar {
   width: 2em;
@@ -547,7 +547,7 @@ li {
   transition: transform 0.2s;
 }
 .webdev-thumb:hover {
-  transform: scale(1.1)
+  transform: scale(1.1);
 }
 #more-on-the-way {
   padding: 30px 0px 30px 0px;
@@ -559,7 +559,7 @@ li {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  opacity: .97;
+  opacity: 0.97;
   position: fixed;
   z-index: 2;
   height: 100vh;
@@ -713,18 +713,18 @@ li {
     height: 30vh;
     align-self: flex-start;
     position: relative;
-    animation: fadeInAnimation ease 7s ;
-    animation-iteration-count: 1; 
+    animation: fadeInAnimation ease 7s;
+    animation-iteration-count: 1;
     animation-fill-mode: both;
   }
-@keyframes fadeInAnimation { 
-  0% { 
-      opacity: 0; 
-  } 
-  100% { 
-      opacity: 1; 
-   } 
-} 
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   #home-about {
     display: flex;
     align-content: center;
@@ -828,18 +828,18 @@ li {
     width: auto;
   }
   .my-masonry-grid {
-    display: flex; 
+    display: flex;
     flex-direction: column;
   }
   .my-masonry-grid_column {
     padding-left: 0px; /* gutter size */
     background-clip: inherit;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: center;
     width: auto;
   }
-  .designImg { 
+  .designImg {
     margin-top: 10px;
   }
   #HollywoodBowl {
@@ -854,7 +854,7 @@ li {
   #lyft-select {
     height: 35vh;
   }
-  #heartbay{
+  #heartbay {
     height: 40vh;
   }
   #destdev {
