@@ -60,14 +60,20 @@ class WebDev extends React.Component {
             <h4>
               Re-designing Burlington Vermont's parking interface with<br></br>{" "}
               JavaScript and Google Maps<br></br>
-              <a
+            </h4>
+            </div>
+            <div id="park-btv-container">
+            <h4>
+            <a
+
                 id="park-btv-link"
+                target="_blank"
                 href="https://park-burlington.herokuapp.com/ "
               >
                 See it live here
               </a>
-            </h4>
-          </div>
+              </h4>
+              </div>
 
           <img
             id="e7754b14c80249eaaa0844afea3f4c84"

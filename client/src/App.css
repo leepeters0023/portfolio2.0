@@ -520,16 +520,21 @@ li {
   top: 100px;
   margin-bottom: 100px;
 }
+#park-btv-container {
+  margin-bottom: 20px;
+}
 #park-btv-link {
   text-decoration: none;
   color: white;
+  margin-top: 20px;
   background-color: black;
   cursor: pointer;
-  padding: 0px 5px 0px 5px;
+  padding: 10px;
   border-radius: 5px;
 }
 #park-btv-link:hover {
-  opacity: 0.5;
+  background-color: hotpink;
+  color: black;
 }
 #web-dev::-webkit-scrollbar {
   width: 2em;
