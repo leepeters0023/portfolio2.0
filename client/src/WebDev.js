@@ -22,11 +22,22 @@ class WebDev extends React.Component {
       modalDisplay: false,
     });
   };
-
+  
   render() {
     return (
       <div id="web-dev-container">
         <div id="web-dev">
+        <img
+            id="b6bbc0cbd2bc4b6a8b50f336a309a031"
+            alt="twinthread-webinar-thumb"
+            className="webdev-thumb"
+            onClick={this.openModal}
+            src="Images/webinar.png"
+          ></img>
+          <div className="item-description">
+            <h4>TwinThread.com Go To Webinar registration page</h4>
+          </div>
+
           <img
             id="baf453d4db5947d5b653480175c4c934"
             alt="twinthread-pricing-thumb"
