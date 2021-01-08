@@ -8,6 +8,7 @@ import Modal from "./Modal";
 export const WebDev = () => {
   const [isModal, setIsModal] = useState(false);
   const [currentModal, setCurrentModal] = useState("");
+  
   const items = [
     {
       id: "b6bbc0cbd2bc4b6a8b50f336a309a031",
@@ -52,8 +53,7 @@ export const WebDev = () => {
       text: "Geo location guessing game in JavaScript",
     },
   ];
-  //currentModal: event.target.id,
-
+  
   const handleModalOpen = (e) => {
     setCurrentModal(e.target.id)
     setIsModal(true)
