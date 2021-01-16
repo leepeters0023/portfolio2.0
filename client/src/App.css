@@ -12,6 +12,10 @@
   display: none;
 }
 /* - - - body, all - - - */
+#gears {
+  width: 20%;
+  height: auto;
+}
 h1 {
   font-size: 250px;
   font-family: Helvetica, sans-sarif;
@@ -698,10 +702,6 @@ li {
     justify-items: center;
     text-align: center;
     margin: auto;
-  }
-  #gears {
-    width: 20%;
-    height: auto;
   }
   h1 {
     font-size: 25vw;
