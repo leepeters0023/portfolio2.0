@@ -184,7 +184,6 @@ function Home(props) {
         </p>
       </div>
       <div id="home-skills">
-        <div id="gears">
           <svg class="svg-illu" viewBox="0 0 901.806 1201.411">
             <g>
               <circle cx="446.39" cy="943.119" r="111.367" />
@@ -293,7 +292,6 @@ function Home(props) {
               />
             </g>
           </svg>
-        </div>
         <div>
           <h2>Skills</h2>
           <h3>Web Development</h3>

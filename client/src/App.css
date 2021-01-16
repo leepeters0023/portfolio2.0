@@ -12,10 +12,7 @@
   display: none;
 }
 /* - - - body, all - - - */
-#gears {
-  width: 20%;
-  height: auto;
-}
+@media 
 h1 {
   font-size: 250px;
   font-family: Helvetica, sans-sarif;
@@ -418,7 +415,7 @@ li {
 }
 .svg-illu {
   position: absolute;
-  width: 40%;
+  width: 35%;
   right: 100px;
 }
 #about-p {
@@ -661,7 +658,18 @@ li {
 /* - - ^ footer ^ - - */
 
 /* - - mobile - all - - */
-
+@media screen and (max-width: 1216px) {
+  .svg-illu {
+    position: absolute;
+    width: 30%;
+    right: 100px;
+  }
+}
+@media screen and (max-width: 1145px) {
+  .svg-illu {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 600px) {
   #header {
