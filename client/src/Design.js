@@ -146,7 +146,7 @@ let items = [
 items = items.map((item, i)  => {
   return (
     <div key={i}>
-      <img src={item.src} alt={item.alt} id={item.id} className="designImg" />
+      <img key={i} src={item.src} alt={item.alt} id={item.id} className="designImg" />
     </div>
   );
 });

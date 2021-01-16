@@ -178,11 +178,7 @@ function Home(props) {
           and websites.<br></br>
           <br></br>I like to make things more efficient and look pretty using
           the arsenal at my disposal listed below. I’ve worked in a variety of
-          environments, from startups to freelancing for anyone willing to
-          support my coffee habit. When not coding or designing, I enjoy never
-          being satisfied with my own work, photography, trail running,
-          backcountry skiing, toast, and occasionally sharing my unpopular
-          opinions about Vermont IPAs.<br></br>
+          environments including startups and as a freelancer so am comfortable being part of a team or getting s***t done solo. When not coding or designing, I enjoy never being satisfied with my own work, photography, trail running, backcountry skiing, toast, and sharing my strong opinions about where to find the best coffee.<br></br>
           <br></br>Hungry for more? Have a closer look at my work history on my
           LinkedIn or check out my code on Github - both linked below.
         </p>
@@ -303,12 +299,11 @@ function Home(props) {
           <h3>Web Development</h3>
           <br></br>
           <ul>
-            <li>Primary programming language: JavaScript</li>
-            <li>Enough to be dangerous: Python</li>
+            <li>Frontend: JavaScript, React + Redux, CSS, HTML, Material UI</li>
+            <li>Learning: Python and Elixir</li>
             <li>Backend: Node.js, Express.js</li>
-            <li>Frontend: React, CSS, HTML </li>
             <li>Database: GraphQL, MongoDB, Firebase</li>
-            <li>Version control: Git / Github (duh) </li>
+            <li>Version control: Git / Github</li>
           </ul>
           <br></br>
           <h3>Design</h3>

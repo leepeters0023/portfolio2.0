@@ -657,6 +657,8 @@ li {
 /* - - ^ footer ^ - - */
 
 /* - - mobile - all - - */
+
+
 @media screen and (max-width: 600px) {
   #header {
     display: none;
@@ -696,6 +698,10 @@ li {
     justify-items: center;
     text-align: center;
     margin: auto;
+  }
+  #gears {
+    width: 20%;
+    height: auto;
   }
   h1 {
     font-size: 25vw;
@@ -763,7 +769,8 @@ li {
   }
   #home-call-to-action {
     border-top: solid black 10px;
-    padding: 5px 5px 5px 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   /* - - - webDev - - - */
   #web-dev-container {
