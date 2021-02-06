@@ -505,17 +505,6 @@ li {
 /* - - ^ design ^ - - */
 
 /* - - - webDev - - - */
-#web-dev {
-  display: flex;
-  overflow: hidden;
-  position: relative;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  width: 100vw;
-  top: 100px;
-  margin-bottom: 100px;
-}
 #park-btv-container {
   margin-bottom: 20px;
 }
@@ -531,17 +520,6 @@ li {
 #park-btv-link:hover {
   background-color: hotpink;
   color: black;
-}
-#web-dev::-webkit-scrollbar {
-  width: 2em;
-}
-#web-dev::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-#web-dev::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slategrey;
 }
 
 #more-on-the-way {
@@ -761,15 +739,7 @@ li {
     margin-bottom: 50px;
   }
   /* - - - webDev - - - */
-  #web-dev {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: fit-content;
-  }
-  #web-dev::-webkit-scrollbar {
-    display: none;
-  }
+ 
   #more-on-the-way {
     padding: 20px 0px 20px 0px;
   }

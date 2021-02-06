@@ -4,9 +4,6 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
   paper: {
     cursor: "pointer",
     height: "auto",
@@ -15,9 +12,11 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "5px 5px 10px 2px black",
     transition: "transform 0.2s",   
   },
-  control: {
-    padding: theme.spacing(2),
-  },
+  container: {
+    overflow: "hidden",
+    top: "100px",
+    marginBottom: "100px",
+ }
 }));
 
 // id="park-btv-link"
@@ -84,9 +83,16 @@ export const WebDev = () => {
   }
 
   return (
-      <div id="web-dev" style={{ position: isModal ? "fixed" : "relative" }}>
+    <Grid
+      container
+      direction="row"
+      justify="center"
+      alignItems="center"
+      className={classes.container}
+      style={{ position: isModal ? "fixed" : "relative" }}
+      spacing={2}>
         {!isModal && (
-          <Grid container className={classes.root} spacing={2}>
+         <>
             {items.map((item, i) => (
               <Grid item>
                 <img
@@ -101,15 +107,15 @@ export const WebDev = () => {
                 </div>
                 </Grid>
             ))}
-          </Grid>
+          </>
         )};
         {isModal && (
           <Modal
             handleModalClose={handleModalClose}
             currentModal={currentModal}
           />
-        )}
-      </div>
+      )}
+      </Grid>
   );
 };
 
