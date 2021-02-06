@@ -505,12 +505,6 @@ li {
 /* - - ^ design ^ - - */
 
 /* - - - webDev - - - */
-#web-dev-container {
-  height: fit-content;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  position: relative;
-}
 #web-dev {
   display: flex;
   overflow: hidden;
@@ -549,16 +543,7 @@ li {
   background-color: darkgrey;
   outline: 1px solid slategrey;
 }
-.webdev-thumb {
-  margin: 10px;
-  box-shadow: 5px 5px 10px 2px black;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-.webdev-thumb:hover {
-  transform: scale(1.1);
-  z-index: 1000;
-}
+
 #more-on-the-way {
   padding: 30px 0px 30px 0px;
 }
@@ -601,11 +586,6 @@ li {
   align-self: center;
   width: 100%;
   height: 100%;
-}
-.webdev-thumb {
-  cursor: pointer;
-  height: auto;
-  width: 500px;
 }
 /* - - ^ webDev ^ - - */
 
@@ -781,17 +761,11 @@ li {
     margin-bottom: 50px;
   }
   /* - - - webDev - - - */
-  #web-dev-container {
-    margin-top: -60px;
-  }
   #web-dev {
     display: flex;
     align-items: center;
     flex-direction: column;
     height: fit-content;
-  }
-  .webdev-thumb {
-    margin-top: 40px;
   }
   #web-dev::-webkit-scrollbar {
     display: none;
@@ -835,11 +809,7 @@ li {
     justify-self: center;
     align-self: center;
   }
-  .webdev-thumb {
-    cursor: pointer;
-    height: auto;
-    width: 90vw;
-  }
+
   /* - - - design - - - */
   #Design {
     background-color: transparent;

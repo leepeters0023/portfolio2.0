@@ -1,5 +1,24 @@
 import React, { useState } from "react";
 import Modal from "./Modal";
+import Grid from '@material-ui/core/Grid';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    cursor: "pointer",
+    height: "auto",
+    width: "500px",
+    margin: "10px",
+    boxShadow: "5px 5px 10px 2px black",
+    transition: "transform 0.2s",   
+  },
+  control: {
+    padding: theme.spacing(2),
+  },
+}));
 
 // id="park-btv-link"
 // target="_blank"
@@ -8,6 +27,7 @@ import Modal from "./Modal";
 export const WebDev = () => {
   const [isModal, setIsModal] = useState(false);
   const [currentModal, setCurrentModal] = useState("");
+  const classes = useStyles();
   
   const items = [
     {
@@ -20,7 +40,7 @@ export const WebDev = () => {
       id: "baf453d4db5947d5b653480175c4c934",
       alt: "twinthread-pricing-thumb",
       src: "Images/twinthreadPricing.png",
-      text: "TwinThread.com pricing page and submission form<",
+      text: "TwinThread.com pricing page and submission form",
     },
     {
       id: "96320ec895dd4060b77559a1cb3de073",
@@ -32,7 +52,7 @@ export const WebDev = () => {
       id: "87b0054d983542baa7735240d057593f",
       alt: "park-burlington-thumb",
       src: "Images/parkBTV.png",
-      text: `Re-designing Burlington Vermont's public parking interface. Seen live at park-burlington.herokuapp.com`,
+      text: `Re-designing Burlington Vermont's public parking interface`,
     },
     {
       id: "4b14c80249eaaa0844afea3f4c84",
@@ -64,23 +84,24 @@ export const WebDev = () => {
   }
 
   return (
-    <div id="web-dev-container">
       <div id="web-dev" style={{ position: isModal ? "fixed" : "relative" }}>
         {!isModal && (
-            items.map((item, i) => (
-              <>
+          <Grid container className={classes.root} spacing={2}>
+            {items.map((item, i) => (
+              <Grid item>
                 <img
                   id={item.id}
                   alt={item.alt}
-                  className="webdev-thumb"
+                  className={classes.paper}
                   onClick={(e) => handleModalOpen(e)}
                   src={item.src}
                 ></img>
                 <div className="item-description">
                   <h4>{item.text}</h4>
                 </div>
-              </>
-            ))
+                </Grid>
+            ))}
+          </Grid>
         )};
         {isModal && (
           <Modal
@@ -89,7 +110,6 @@ export const WebDev = () => {
           />
         )}
       </div>
-    </div>
   );
 };
 
