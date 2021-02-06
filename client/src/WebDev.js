@@ -94,7 +94,7 @@ export const WebDev = () => {
         {!isModal && (
          <>
             {items.map((item, i) => (
-              <Grid item>
+              <Grid key={i} item>
                 <img
                   id={item.id}
                   alt={item.alt}
