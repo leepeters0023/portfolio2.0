@@ -178,7 +178,7 @@ function Home(props) {
           and websites.<br></br>
           <br></br>I like to make things more efficient and look pretty using
           the arsenal at my disposal listed below. I’ve worked in a variety of
-          environments including startups and as a freelancer so am comfortable being part of a team or getting s***t done solo. When not coding or designing, I enjoy never being satisfied with my own work, photography, trail running, backcountry skiing, toast, and sharing my strong opinions about where to find the best coffee.<br></br>
+          environments including startups and as a freelancer so am comfortable being part of a team or working solo. When not coding or designing, I enjoy never being satisfied with my own work, photography, trail running, backcountry skiing, and sharing my strong opinions about where to find the best coffee.<br></br>
           <br></br>Hungry for more? Have a closer look at my work history on my
           LinkedIn or check out my code on Github - both linked below.
         </p>
