@@ -301,7 +301,6 @@ function Home(props) {
             <li>Learning: Python and Elixir</li>
             <li>Backend: Node.js, Express.js</li>
             <li>Database: GraphQL, MongoDB, Firebase</li>
-            <li>Version control: Git / Github</li>
           </ul>
           <br></br>
           <h3>Design</h3>
