@@ -30,6 +30,18 @@ export const WebDev = () => {
   
   const items = [
     {
+      id: "0611a5c0375848c2adf214ee99e36826",
+      alt: "brandhub-part-one",
+      src: "Images/brandhub-part1.png",
+      text: "Brandhub Part One",
+    },
+    {
+      id: "390ad8df739b482d87cc7a9b293f6fa2",
+      alt: "brandhub-part-two",
+      src: "Images/brandhub-part2.png",
+      text: "Brandhub Part Two",
+    },
+    {
       id: "b6bbc0cbd2bc4b6a8b50f336a309a031",
       alt: "twinthread-webinar-thumb",
       src: "Images/webinar.png",
